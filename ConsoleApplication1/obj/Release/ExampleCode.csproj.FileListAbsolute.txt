@@ -1,0 +1,11 @@
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\bin\Release\ConsoleApplication1.exe.config
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\bin\Release\ConsoleApplication1.exe
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\bin\Release\ConsoleApplication1.pdb
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\bin\Release\MockDBMS.dll
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\bin\Release\MacroScope.dll
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\bin\Release\Antlr3.Runtime.dll
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\bin\Release\MockDBMS.pdb
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\bin\Release\MacroScope.pdb
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\obj\Release\ConsoleApplication1.exe
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\obj\Release\ConsoleApplication1.pdb

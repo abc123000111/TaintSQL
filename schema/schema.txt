@@ -1,0 +1,38 @@
+CREATE TABLE check_in (
+ROOM_NAME varchar(20),
+ID_CARD varchar(20),
+IS_PAY varchar(10),
+STATE varchar(20),
+IN_TIME varchar(255),
+OUT_TIME varchar(255),
+PRO1 varchar(20),
+PRO2 varchar(20)
+) 
+
+CREATE TABLE room_management (
+ROOM_ID int,
+ROOM_NAME varchar(20),
+PRICE int,
+KIND varchar(20),
+STATE varchar(20),
+REMARK varchar(20),
+PRO2 varchar(20)
+)
+
+CREATE TABLE roomer_management (
+ID_CARD varchar(20),
+NAME varchar(20),
+PHONE varchar(20),
+ADDRESS varchar(20),
+STATE varchar(20),
+REMARK varchar(200),
+PRO2 varchar(20)
+)
+
+CREATE TABLE userinfo (
+userName varchar(20),
+password varchar(20),
+LEVEL varchar(20),
+status varchar(20),
+PRO2 varchar(20)
+)

@@ -1,0 +1,6 @@
+C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\bin\Release\MacroScope.dll
+C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\bin\Release\MacroScope.pdb
+C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\bin\Release\Antlr3.Runtime.dll
+C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\obj\Release\MacroScope.dll
+C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\obj\Release\MacroScope.pdb

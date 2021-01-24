@@ -1,0 +1,10 @@
+C:\Documents and Settings\Wei\桌面\moda_cs527\TestDBApp\bin\Release\TestDBApp.dll
+C:\Documents and Settings\Wei\桌面\moda_cs527\TestDBApp\bin\Release\TestDBApp.pdb
+C:\Documents and Settings\Wei\桌面\moda_cs527\TestDBApp\bin\Release\Antlr3.Runtime.dll
+C:\Documents and Settings\Wei\桌面\moda_cs527\TestDBApp\bin\Release\MockDBMS.dll
+C:\Documents and Settings\Wei\桌面\moda_cs527\TestDBApp\bin\Release\MacroScope.dll
+C:\Documents and Settings\Wei\桌面\moda_cs527\TestDBApp\bin\Release\MockDBMS.pdb
+C:\Documents and Settings\Wei\桌面\moda_cs527\TestDBApp\bin\Release\MacroScope.pdb
+C:\Documents and Settings\Wei\桌面\moda_cs527\TestDBApp\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Wei\桌面\moda_cs527\TestDBApp\obj\Release\TestDBApp.dll
+C:\Documents and Settings\Wei\桌面\moda_cs527\TestDBApp\obj\Release\TestDBApp.pdb

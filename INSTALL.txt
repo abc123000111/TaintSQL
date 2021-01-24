@@ -1,0 +1,2 @@
+Just build the DLLs you need (see file HACKING.txt) and use them in
+your application.

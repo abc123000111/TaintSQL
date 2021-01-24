@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="facbc5d0-3725-4aa3-994b-a5b7b5475627" name="Wei@PKU-AAF96026023 2020-11-07 14:57:00" runUser="PKU-AAF96026023\Wei" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local Test Run" id="182bb8b1-9d2b-40bc-b28f-8b13ae0c156d">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="Wei_PKU-AAF96026023 2020-11-07 14_57_00">
+      <DeploymentItem filename="C:\Documents and Settings\Wei\桌面\moda_cs527\Lib\Antlr3.Runtime.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Wei\桌面\moda_cs527\MockDBMS\bin\Debug\MockDBMS.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2020-11-07T14:57:00.0379167+08:00" queuing="2020-11-07T14:57:06.9999023+08:00" start="2020-11-07T14:57:07.4295185+08:00" finish="2020-11-07T14:57:09.8750261+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="4" executed="4" passed="4" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="testTest" storage="c:\documents and settings\wei\桌面\moda_cs527\testdbapp\bin\debug\testdbapp.dll" id="00f220a2-f150-dde3-376d-fefb289ba9b9">
+      <Execution id="f1e58617-57c0-4dce-a207-e7ae4a79e206" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/moda_cs527/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestDBApp.PexTestClassTest, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testTest" />
+    </UnitTest>
+    <UnitTest name="TestMain" storage="c:\documents and settings\wei\桌面\moda_cs527\testdbapp\bin\debug\testdbapp.dll" id="467bbc26-d123-8fe0-f79e-4acbdff39ad4">
+      <Execution id="56085eb6-e9b2-4013-91cc-18f65a865928" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/moda_cs527/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMain" />
+    </UnitTest>
+    <UnitTest name="testExample" storage="c:\documents and settings\wei\桌面\moda_cs527\testdbapp\bin\debug\testdbapp.dll" id="861209ae-ecf9-51bf-5f5b-72ef591bb0e3">
+      <Execution id="0863d9b6-a312-49b9-a92b-cf8925383e8d" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/moda_cs527/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestDBApp.PexTestClassTest, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testExample" />
+    </UnitTest>
+    <UnitTest name="testMe" storage="c:\documents and settings\wei\桌面\moda_cs527\testdbapp\bin\debug\testdbapp.dll" id="e77281f7-102b-058d-de4c-d076845bcac1">
+      <Execution id="2f0ebb3a-4a06-4d8b-b7a4-1f0f6d793eed" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/moda_cs527/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testMe" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="467bbc26-d123-8fe0-f79e-4acbdff39ad4" executionId="56085eb6-e9b2-4013-91cc-18f65a865928" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e77281f7-102b-058d-de4c-d076845bcac1" executionId="2f0ebb3a-4a06-4d8b-b7a4-1f0f6d793eed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="861209ae-ecf9-51bf-5f5b-72ef591bb0e3" executionId="0863d9b6-a312-49b9-a92b-cf8925383e8d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="00f220a2-f150-dde3-376d-fefb289ba9b9" executionId="f1e58617-57c0-4dce-a207-e7ae4a79e206" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="56085eb6-e9b2-4013-91cc-18f65a865928" testId="467bbc26-d123-8fe0-f79e-4acbdff39ad4" testName="TestMain" computerName="PKU-AAF96026023" duration="00:00:00.3788157" startTime="2020-11-07T14:57:07.7159293+08:00" endTime="2020-11-07T14:57:09.4674415+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="56085eb6-e9b2-4013-91cc-18f65a865928">
+      <Output>
+        <StdOut>Table : persons
+Table : lastname
+Table : "Smith"</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2f0ebb3a-4a06-4d8b-b7a4-1f0f6d793eed" testId="e77281f7-102b-058d-de4c-d076845bcac1" testName="testMe" computerName="PKU-AAF96026023" duration="00:00:00.0271785" startTime="2020-11-07T14:57:09.4784573+08:00" endTime="2020-11-07T14:57:09.5335363+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2f0ebb3a-4a06-4d8b-b7a4-1f0f6d793eed">
+      <Output>
+        <StdOut>Table : firstname
+Table : x
+Table : persons
+WHERE
+Table : lastname</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0863d9b6-a312-49b9-a92b-cf8925383e8d" testId="861209ae-ecf9-51bf-5f5b-72ef591bb0e3" testName="testExample" computerName="PKU-AAF96026023" duration="00:00:00.0004754" startTime="2020-11-07T14:57:09.5555679+08:00" endTime="2020-11-07T14:57:09.5665837+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0863d9b6-a312-49b9-a92b-cf8925383e8d">
+      <Output>
+        <StdOut>Table : persons
+Table : lastname
+Table : "Smith"</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f1e58617-57c0-4dce-a207-e7ae4a79e206" testId="00f220a2-f150-dde3-376d-fefb289ba9b9" testName="testTest" computerName="PKU-AAF96026023" duration="00:00:00.0002578" startTime="2020-11-07T14:57:09.5665837+08:00" endTime="2020-11-07T14:57:09.5996311+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f1e58617-57c0-4dce-a207-e7ae4a79e206">
+      <Output>
+        <StdOut>Table : persons
+Table : lastname
+Table : "Smith"</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

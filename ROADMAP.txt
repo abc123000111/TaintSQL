@@ -1,0 +1,53 @@
+MacroScope, as it stands, has a lot of room for improvement. This
+document attempts to classify possible improvements according to their
+desirability for the overall project.
+
+Features I might implement myself:
+
+ - More tests. Especially Glaze should be unit-tested.
+
+ - Parsed SQL tree should include pointers to parents. In retrospect,
+ leaving them out was a mistake, making tree transformations both
+ harder to implement and less efficient.
+
+Features I'd especially like to see patches for:
+
+ - More database backends. The current implementation doesn't support
+ _any_ Open Source database, which is just sad.
+
+ - Handling more standard SQL (that is, SQL 92) constructs.
+
+Features which would be nice to have:
+
+ - More supported platforms: Mono, Windows CE, .NET 3.x .
+
+Features we need to think about:
+
+ - How should I higher-level object model look like? The grammar-based
+ one is flexible, but creating SQL in it is rather verbose - an
+ alternative would be nice.
+
+ - How to support SQL beyond CRUD: DDL, stored procedures etc.
+
+ - How to implement a backend-agnostic type system - insofar as
+ ADO.NET does that, it does it wrong, and MacroScope also just tries
+ to ignore the issue.
+
+Non-features, IMHO:
+
+ - Parsing more non-standard SQL. Existing implementation does it, in
+ a lot of cases, and it is useful, because users can start using
+ MacroScope without rewriting their existing SQL, but it conflicts
+ with the goal of supporting more backends.
+
+ - Removing stuff. Implemented behaviors may not be particularly
+ elegant, but almost anything that's in MacroScope is there for a
+ practical purpose, and even when it conflicts with your purposes, I
+ think a better way should be found than hacking away everything
+ standing in your way.
+
+Naturally, people will disagree which features are useful and should
+go in - if you want MacroScope to do something it doesn't, you should
+generally just go and implement it - even if the change isn't accepted
+to to the "official" project, nothing stops you from maintaining your
+own variant of MacroScope - that's what Open Source is for.

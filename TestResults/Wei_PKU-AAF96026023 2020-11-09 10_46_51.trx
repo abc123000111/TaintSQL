@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="739548cb-42ad-4f97-baac-c19c60afeee7" name="Wei@PKU-AAF96026023 2020-11-09 10:46:51" runUser="PKU-AAF96026023\Wei" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local Test Run" id="182bb8b1-9d2b-40bc-b28f-8b13ae0c156d">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="Wei_PKU-AAF96026023 2020-11-09 10_46_51">
+      <DeploymentItem filename="C:\Documents and Settings\Wei\桌面\moda_cs527\Lib\Antlr3.Runtime.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Wei\桌面\moda_cs527\MockDBMS\bin\Debug\MockDBMS.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2020-11-09T10:46:51.9179082+08:00" queuing="2020-11-09T10:46:53.0996074+08:00" start="2020-11-09T10:46:53.3900250+08:00" finish="2020-11-09T10:46:55.4129338+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="6" executed="6" passed="1" error="0" failed="5" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="testSQLThrowsNoViableAltException381" storage="c:\documents and settings\wei\桌面\moda_cs527\testdbapp\bin\debug\testdbapp.dll" id="a026e23b-599f-e7d1-dbfa-d65397252ed8">
+      <Execution id="5e3925d3-baad-4ef1-b778-fd9d8f2b3809" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/moda_cs527/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testSQLThrowsNoViableAltException381" />
+    </UnitTest>
+    <UnitTest name="testSQLThrowsNoViableAltException746" storage="c:\documents and settings\wei\桌面\moda_cs527\testdbapp\bin\debug\testdbapp.dll" id="9ea9c60d-5d13-be75-a73d-346062c9451b">
+      <Execution id="9ab549af-a1e4-4a3b-94cb-b10403570e6a" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/moda_cs527/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testSQLThrowsNoViableAltException746" />
+    </UnitTest>
+    <UnitTest name="TestMain" storage="c:\documents and settings\wei\桌面\moda_cs527\testdbapp\bin\debug\testdbapp.dll" id="467bbc26-d123-8fe0-f79e-4acbdff39ad4">
+      <Execution id="81fff55f-fb90-44fa-9749-9d67711cc1a8" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/moda_cs527/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMain" />
+    </UnitTest>
+    <UnitTest name="testSQLThrowsNoViableAltException555" storage="c:\documents and settings\wei\桌面\moda_cs527\testdbapp\bin\debug\testdbapp.dll" id="e50ca6b7-043c-d4f1-e04e-3ec4384183e6">
+      <Execution id="e1bc5ed4-210b-4818-b25e-77ae5cac29bc" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/moda_cs527/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testSQLThrowsNoViableAltException555" />
+    </UnitTest>
+    <UnitTest name="testSQLThrowsIndexOutOfRangeException482" storage="c:\documents and settings\wei\桌面\moda_cs527\testdbapp\bin\debug\testdbapp.dll" id="35b9819b-54b0-98c7-7517-ac0cd7d68a95">
+      <Execution id="2628da6d-c4c1-4865-bda2-4b1f2ca7047e" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/moda_cs527/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testSQLThrowsIndexOutOfRangeException482" />
+    </UnitTest>
+    <UnitTest name="testMe" storage="c:\documents and settings\wei\桌面\moda_cs527\testdbapp\bin\debug\testdbapp.dll" id="e77281f7-102b-058d-de4c-d076845bcac1">
+      <Execution id="c959287a-bdef-416f-9d1f-a5908d45146a" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/moda_cs527/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testMe" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="35b9819b-54b0-98c7-7517-ac0cd7d68a95" executionId="2628da6d-c4c1-4865-bda2-4b1f2ca7047e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="467bbc26-d123-8fe0-f79e-4acbdff39ad4" executionId="81fff55f-fb90-44fa-9749-9d67711cc1a8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9ea9c60d-5d13-be75-a73d-346062c9451b" executionId="9ab549af-a1e4-4a3b-94cb-b10403570e6a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a026e23b-599f-e7d1-dbfa-d65397252ed8" executionId="5e3925d3-baad-4ef1-b778-fd9d8f2b3809" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e50ca6b7-043c-d4f1-e04e-3ec4384183e6" executionId="e1bc5ed4-210b-4818-b25e-77ae5cac29bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e77281f7-102b-058d-de4c-d076845bcac1" executionId="c959287a-bdef-416f-9d1f-a5908d45146a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="2628da6d-c4c1-4865-bda2-4b1f2ca7047e" testId="35b9819b-54b0-98c7-7517-ac0cd7d68a95" testName="testSQLThrowsIndexOutOfRangeException482" computerName="PKU-AAF96026023" duration="00:00:00.2485919" startTime="2020-11-09T10:46:53.5802986+08:00" endTime="2020-11-09T10:46:54.7619978+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2628da6d-c4c1-4865-bda2-4b1f2ca7047e">
+      <Output>
+        <StdOut>Table : user
+Adding Table user
+Table : name
+Table : password
+Table : user
+WHERE
+Table : name
+name</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="81fff55f-fb90-44fa-9749-9d67711cc1a8" testId="467bbc26-d123-8fe0-f79e-4acbdff39ad4" testName="TestMain" computerName="PKU-AAF96026023" duration="00:00:00.1531309" startTime="2020-11-09T10:46:54.7820266+08:00" endTime="2020-11-09T10:46:54.9622858+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="81fff55f-fb90-44fa-9749-9d67711cc1a8">
+      <Output>
+        <StdOut>Table : persons
+Table : lastname
+Table : "Smith"</StdOut>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.TestMain 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 76
+   在 MyApplication.DBApplication.Main() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\TestDBApp\DBApplication.cs:行号 97
+   在 MyApplication.PexTestClass.TestMain() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\TestDBApp\DBApplication.cs:行号 215
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9ab549af-a1e4-4a3b-94cb-b10403570e6a" testId="9ea9c60d-5d13-be75-a73d-346062c9451b" testName="testSQLThrowsNoViableAltException746" computerName="PKU-AAF96026023" duration="00:00:00.0098411" startTime="2020-11-09T10:46:54.9622858+08:00" endTime="2020-11-09T10:46:54.9923290+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9ab549af-a1e4-4a3b-94cb-b10403570e6a">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testSQLThrowsNoViableAltException746 引发了异常: 
+Antlr.Runtime.NoViableAltException: 引发类型为“Antlr.Runtime.NoViableAltException”的异常。</Message>
+          <StackTrace>    在 MacroScope.MacroScopeParser.columnValue() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\MacroScopeParser.cs:行号 973
+   在 MacroScope.MacroScopeParser.columnValueList() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\MacroScopeParser.cs:行号 881
+   在 MacroScope.MacroScopeParser.insertStatement() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\MacroScopeParser.cs:行号 434
+   在 MacroScope.MacroScopeParser.statement() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\MacroScopeParser.cs:行号 297
+   在 MacroScope.Factory.CreateStatement(String commandText) 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\Factory.cs:行号 56
+   在 MockDBMS.SqlServer.MockSqlCommand.parseQuery(String query) 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 843
+   在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 31
+   在 MockDBMS.SqlServer.MockSqlCommand.ExecuteScalar() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 854
+   在 MyApplication.PexTestClass.testSQL(String name, String password) 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\TestDBApp\DBApplication.cs:行号 264
+   在 MyApplication.PexTestClass.testSQLThrowsNoViableAltException746() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\TestDBApp\PexTestClass.testSQL.g.cs:行号 36
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5e3925d3-baad-4ef1-b778-fd9d8f2b3809" testId="a026e23b-599f-e7d1-dbfa-d65397252ed8" testName="testSQLThrowsNoViableAltException381" computerName="PKU-AAF96026023" duration="00:00:00.0173991" startTime="2020-11-09T10:46:55.0123578+08:00" endTime="2020-11-09T10:46:55.0323866+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e3925d3-baad-4ef1-b778-fd9d8f2b3809">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testSQLThrowsNoViableAltException381 引发了异常: 
+Antlr.Runtime.NoViableAltException: 引发类型为“Antlr.Runtime.NoViableAltException”的异常。</Message>
+          <StackTrace>    在 MacroScope.MacroScopeParser.columnValue() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\MacroScopeParser.cs:行号 973
+   在 MacroScope.MacroScopeParser.columnValueList() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\MacroScopeParser.cs:行号 881
+   在 MacroScope.MacroScopeParser.insertStatement() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\MacroScopeParser.cs:行号 434
+   在 MacroScope.MacroScopeParser.statement() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\MacroScopeParser.cs:行号 297
+   在 MacroScope.Factory.CreateStatement(String commandText) 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\Factory.cs:行号 56
+   在 MockDBMS.SqlServer.MockSqlCommand.parseQuery(String query) 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 843
+   在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 31
+   在 MockDBMS.SqlServer.MockSqlCommand.ExecuteScalar() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 854
+   在 MyApplication.PexTestClass.testSQL(String name, String password) 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\TestDBApp\DBApplication.cs:行号 264
+   在 MyApplication.PexTestClass.testSQLThrowsNoViableAltException381() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\TestDBApp\PexTestClass.testSQL.g.cs:行号 64
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e1bc5ed4-210b-4818-b25e-77ae5cac29bc" testId="e50ca6b7-043c-d4f1-e04e-3ec4384183e6" testName="testSQLThrowsNoViableAltException555" computerName="PKU-AAF96026023" duration="00:00:00.0105669" startTime="2020-11-09T10:46:55.0323866+08:00" endTime="2020-11-09T10:46:55.1024874+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e1bc5ed4-210b-4818-b25e-77ae5cac29bc">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testSQLThrowsNoViableAltException555 引发了异常: 
+Antlr.Runtime.NoViableAltException: 引发类型为“Antlr.Runtime.NoViableAltException”的异常。</Message>
+          <StackTrace>    在 MacroScope.MacroScopeParser.columnValue() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\MacroScopeParser.cs:行号 973
+   在 MacroScope.MacroScopeParser.columnValueList() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\MacroScopeParser.cs:行号 881
+   在 MacroScope.MacroScopeParser.insertStatement() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\MacroScopeParser.cs:行号 434
+   在 MacroScope.MacroScopeParser.statement() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\MacroScopeParser.cs:行号 297
+   在 MacroScope.Factory.CreateStatement(String commandText) 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\Factory.cs:行号 56
+   在 MockDBMS.SqlServer.MockSqlCommand.parseQuery(String query) 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 843
+   在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 31
+   在 MockDBMS.SqlServer.MockSqlCommand.ExecuteScalar() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 854
+   在 MyApplication.PexTestClass.testSQL(String name, String password) 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\TestDBApp\DBApplication.cs:行号 264
+   在 MyApplication.PexTestClass.testSQLThrowsNoViableAltException555() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\TestDBApp\PexTestClass.testSQL.g.cs:行号 49
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c959287a-bdef-416f-9d1f-a5908d45146a" testId="e77281f7-102b-058d-de4c-d076845bcac1" testName="testMe" computerName="PKU-AAF96026023" duration="00:00:00.0119702" startTime="2020-11-09T10:46:55.1125018+08:00" endTime="2020-11-09T10:46:55.1325306+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c959287a-bdef-416f-9d1f-a5908d45146a">
+      <Output>
+        <StdOut>Table : firstname
+Table : x
+Table : persons
+WHERE
+Table : lastname</StdOut>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testMe 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 40
+   在 MyApplication.DBApplication.TestMe() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\TestDBApp\DBApplication.cs:行号 25
+   在 MyApplication.PexTestClass.testMe() 位置 C:\Documents and Settings\Wei\桌面\moda_cs527\TestDBApp\DBApplication.cs:行号 220
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

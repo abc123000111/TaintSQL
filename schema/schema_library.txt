@@ -1,0 +1,39 @@
+CREATE TABLE Book (
+Bauthor varchar(256),
+Bid varchar(20),
+BSid varchar(20),
+Bin_date varchar(256),
+Bnow_amount int,
+Bpress varchar(256),
+Bprice int,
+Btitle varchar(256),
+Btotal int
+)
+
+CREATE TABLE BookShelf (
+BSid varchar(20),
+BSposition varchar(256)
+)
+
+CREATE TABLE Borrow (
+BorrowDate varchar(256),
+ReturnDate varchar(256),
+BOid varchar(20),
+Bid varchar(20),
+Rid varchar(20),
+Mname varchar(20)
+)
+
+CREATE TABLE Manager (
+Mname varchar(20),
+Mpassword varchar(15)
+)
+
+CREATE TABLE Reader (
+Raddress varchar(256),
+Rid varchar(20),
+Rname varchar(256),
+Rown int,
+Rphone varchar(30),
+Rsex varchar(20)
+)

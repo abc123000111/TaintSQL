@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<project name="MacroScope" default="compile" basedir=".">
+
+    <target name="compile" depends="MacroScope,Glaze"/>
+
+    <target name="MacroScope" depends="grammar">
+	<style style="build\csproj2build.xsl"
+		in="MacroScope\MacroScope.csproj" out="MacroScope\MacroScope.build"/>
+	<nant buildfile="MacroScope\MacroScope.build"/>
+    </target>
+
+    <target name="check.grammar">
+	<uptodate property="grammarNotRequired">
+	    <sourcefiles>
+		<include name="MacroScope\MacroScope.g" />
+	    </sourcefiles>
+	    <targetfiles>
+		<include name="MacroScope\MacroScopeLexer.cs" />
+		<include name="MacroScope\MacroScopeParser.cs" />
+	    </targetfiles>
+	</uptodate>
+    </target>
+
+    <target name="grammar" depends="check.grammar"
+	    unless="${grammarNotRequired}">
+	<delete file="MacroScope\MacroScopeLexer.cs"/>
+	<delete file="MacroScope\MacroScopeParser.cs"/>
+
+	<exec program="java">
+	    <arg value="org.antlr.Tool" />
+	    <arg value="MacroScope\MacroScope.g" />
+	</exec>
+
+	<if test="${not file::exists('MacroScope\MacroScopeLexer.cs') or not file::exists('MacroScope\MacroScopeParser.cs')}">
+		<fail message="Antlr failed."/>
+	</if>
+    </target>
+
+    <target name="Detail_grammar">
+	<delete file="Detail\DetailLexer.cs"/>
+	<delete file="Detail\DetailParser.cs"/>
+
+	<exec program="java">
+	    <arg value="org.antlr.Tool" />
+	    <arg value="Detail\Detail.g" />
+	</exec>
+
+	<if test="${not file::exists('Detail\DetailLexer.cs') or not file::exists('Detail\DetailParser.cs')}">
+		<fail message="Antlr failed."/>
+	</if>
+    </target>
+
+    <target name="Detail" depends="Detail_grammar">
+	<style style="build\csproj2build.xsl"
+		in="Detail\Detail.csproj" out="Detail\Detail.build"/>
+	<nant buildfile="Detail\Detail.build"/>
+	<copy file="depend\Antlr3.Runtime.dll"
+		todir="Detail\bin\Debug"/>
+    </target>
+
+    <target name="try" depends="Detail">
+	<exec program="Detail\bin\Debug\Detail.exe"/>
+    </target>
+
+    <target name="Glaze" depends="MacroScope">
+		todir="Glaze\bin\Debug"/>		
+	<copy file="depend\log4net.dll"
+		todir="Glaze\bin\Debug"/>
+	<copy file="depend\Antlr3.Runtime.dll"
+		todir="Glaze\bin\Debug"/>
+	<copy file="MacroScope\bin\Debug\MacroScope.dll"
+		todir="Glaze\bin\Debug"/>
+
+	<style style="build\csproj2build.xsl"
+		in="Glaze\Glaze.csproj" out="Glaze\Glaze.build"/>
+	<nant buildfile="Glaze\Glaze.build"/>
+    </target>
+
+    <target name="TestMacroScope" depends="MacroScope">
+	<copy file="depend\Antlr3.Runtime.dll"
+		todir="TestMacroScope\bin\Debug"/>
+	<copy file="MacroScope\bin\Debug\MacroScope.dll"
+		todir="TestMacroScope\bin\Debug"/>
+
+	<style style="build\csproj2build.xsl"
+		in="TestMacroScope\TestMacroScope.csproj" out="TestMacroScope\TestMacroScope.build"/>
+	<nant buildfile="TestMacroScope\TestMacroScope.build"/>
+    </target>
+
+    <target name="mstest" depends="TestMacroScope">
+	<!-- you can skip this if you have NUnit installed (and your
+		version is compatible with your NAnt) -->
+	<copy file="depend\nunit.framework.dll"
+		todir="TestMacroScope\bin\Debug"/>
+
+	<style style="build\gentest.xsl" in="build\gentest.xsl"	out="TestMacroScope\bin\Debug\test.build">
+	    <parameters>
+		<parameter name="TestModule" value="TestMacroScope.exe" />
+	    </parameters>
+	</style>
+	<nant buildfile="TestMacroScope\bin\Debug\test.build"/>
+    </target>
+
+    <target name="test" depends="mstest"/>
+
+</project>

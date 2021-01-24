@@ -1,0 +1,8 @@
+Copyright (C) 2007, 2008 Vaclav Barta <vbar@comp.cz>
+
+Source code of MacroScope libraries is licensed under Lesser General
+Public License 2.1, a copy of which is included in file
+licenses\MacroScope.txt. Building, testing and using these libraries
+requires additional software components, some of which are included in
+this distribution. Licenses of the included components are in the
+licenses directory.

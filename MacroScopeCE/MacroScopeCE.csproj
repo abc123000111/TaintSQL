@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8F9A61F8-9732-42B4-BDE0-DA7808BE9264}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MacroScope</RootNamespace>
+    <AssemblyName>MacroScope</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=0.3.0.37313, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.2.6.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AliasedItem.cs" />
+    <Compile Include="Assignment.cs" />
+    <Compile Include="BracketedExpression.cs" />
+    <Compile Include="CaseAlternative.cs" />
+    <Compile Include="CaseExpression.cs" />
+    <Compile Include="CaseInsensitiveStringStream.cs" />
+    <Compile Include="Condition.cs" />
+    <Compile Include="DateTimeUnit.cs" />
+    <Compile Include="DbObject.cs" />
+    <Compile Include="DefaultValue.cs" />
+    <Compile Include="DeleteStatement.cs" />
+    <Compile Include="DoubleValue.cs" />
+    <Compile Include="Expression.cs" />
+    <Compile Include="ExpressionItem.cs" />
+    <Compile Include="ExtractFunction.cs" />
+    <Compile Include="Factory.cs" />
+    <Compile Include="FunctionCall.cs" />
+    <Compile Include="GroupByClause.cs" />
+    <Compile Include="Identifier.cs" />
+    <Compile Include="IExpression.cs" />
+    <Compile Include="INode.cs" />
+    <Compile Include="InsertStatement.cs" />
+    <Compile Include="IntegerValue.cs" />
+    <Compile Include="Interval.cs" />
+    <Compile Include="IStatement.cs" />
+    <Compile Include="IVisitor.cs" />
+    <Compile Include="Join.cs" />
+    <Compile Include="LiteralDateTime.cs" />
+    <Compile Include="MacroScopeLexer.cs" />
+    <Compile Include="MacroScopeParser.cs" />
+    <Compile Include="MAccessTailor.cs" />
+    <Compile Include="MSqlServerTailor.cs" />
+    <Compile Include="MTailor.cs" />
+    <Compile Include="Namer.cs" />
+    <Compile Include="NullValue.cs" />
+    <Compile Include="ExpressionOperator.cs" />
+    <Compile Include="OracleTailor.cs" />
+    <Compile Include="OrderExpression.cs" />
+    <Compile Include="ParamGrower.cs" />
+    <Compile Include="ParamPicker.cs" />
+    <Compile Include="PassiveVisitor.cs" />
+    <Compile Include="PatternExpression.cs" />
+    <Compile Include="Placeholder.cs" />
+    <Compile Include="PredicateExpression.cs" />
+    <Compile Include="PredicateQuantifier.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryExpression.cs" />
+    <Compile Include="QueryParts.cs" />
+    <Compile Include="Range.cs" />
+    <Compile Include="SelectStatement.cs" />
+    <Compile Include="Stringifier.cs" />
+    <Compile Include="SwitchFunction.cs" />
+    <Compile Include="TableWildcard.cs" />
+    <Compile Include="TailorUtil.cs" />
+    <Compile Include="TypeCast.cs" />
+    <Compile Include="UpdateStatement.cs" />
+    <Compile Include="Variable.cs" />
+    <Compile Include="Wildcard.cs" />
+    <Compile Include="StringValue.cs" />
+    <Compile Include="Table.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

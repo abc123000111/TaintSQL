@@ -1,0 +1,91 @@
+CREATE TABLE ProductCategory(
+CategoryId int,
+CategoryName varchar(50)
+)
+
+CREATE TABLE ProductUnit(
+UnitId int,
+UnitName varchar(20)
+)
+
+CREATE TABLE Products(
+ProductId varchar(50),
+ProductName varchar(50),
+UnitPrice int,
+UnitId int,
+Discount int,
+CategoryId int
+)
+
+CREATE TABLE InventoryStatus(
+StatusId int,
+StatusDescription varchar(20)
+)
+
+CREATE TABLE ProductInventory(
+ProductId varchar(50),
+TotalCount int,
+MinCount int,
+MaxCount int,
+StatusId int
+)
+
+CREATE TABLE LoginLogs(
+LogId tinyint ,
+LoginId int,
+LoginName varchar(50),
+ServerName varchar(100),
+LoginTime varchar(255),
+ExitTime varchar(255)
+)
+
+CREATE TABLE ProductStorage(
+StorageId int tinyint,
+ProductId varchar(50),
+AddedCount int,
+StorageTime varchar(255)
+)
+
+CREATE TABLE SalesList(
+SerialNumber varchar(50),
+TotalMoney int,
+RealReceive int,
+ReturnMone int,
+SalesPersonId int,
+CreateTime varchar(255)
+)
+
+CREATE TABLE SalesListDetail(
+Id int,
+SerialNumber varchar(50),
+ProductId varchar(50),
+ProductName varchar(50),
+UnitPrice int,
+Discount int,
+Quantity int,
+SubTotalMoney int
+)
+
+CREATE TABLE SalesPerson(
+SalesPersonId int,
+SalesPersonName varchar(50),
+LoginPassword varchar(50)
+)
+
+CREATE TABLE SysAdmins(
+LoginId int,
+LoginPassword varchar(100),
+AdminName varchar(50),
+AdminStatus tinyint,
+RoleId int
+)
+
+CREATE TABLE VIPMembers(
+MemberId int,
+MemberName varchar(50),
+Points int,
+PhoneNumber varchar(200),
+Address varchar(255),
+OpenTime varchar(255),
+Status int
+)

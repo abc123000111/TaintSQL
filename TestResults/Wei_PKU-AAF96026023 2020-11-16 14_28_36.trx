@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7d031fbb-4fd4-4468-88e8-82c143a1b204" name="Wei@PKU-AAF96026023 2020-11-16 14:28:36" runUser="PKU-AAF96026023\Wei" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local Test Run" id="182bb8b1-9d2b-40bc-b28f-8b13ae0c156d">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="Wei_PKU-AAF96026023 2020-11-16 14_28_36">
+      <DeploymentItem filename="C:\Documents and Settings\Wei\桌面\TaintSQL\Lib\Antlr3.Runtime.dll" />
+      <DeploymentItem filename="C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\bin\Debug\MockDBMS.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2020-11-16T14:28:36.5951300+08:00" queuing="2020-11-16T14:28:37.6065844+08:00" start="2020-11-16T14:28:37.9370596+08:00" finish="2020-11-16T14:28:39.7596804+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="27" executed="27" passed="2" error="0" failed="25" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="testExampleThrowsNullReferenceException241" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="d3bafb8e-3718-cd22-c477-e7f858cfb0b9">
+      <Execution id="baec2fbc-9b30-4fe9-93e2-5f665f49bcd1" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testExampleThrowsNullReferenceException241" />
+    </UnitTest>
+    <UnitTest name="testSimpleDBThrowsNullReferenceException165" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="2140dd50-2a44-4df5-1977-63c5cd95d262">
+      <Execution id="e32eae9d-b1fd-4fd2-b183-18b858a3da1f" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testSimpleDBThrowsNullReferenceException165" />
+    </UnitTest>
+    <UnitTest name="TestpexChoose02" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="a5e86886-2e74-5ffe-2246-e68777a3431f">
+      <Execution id="2532862a-9ab8-4d69-9a22-1c8babd1ec61" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestpexChoose02" />
+    </UnitTest>
+    <UnitTest name="testSimpleDBThrowsNullReferenceException317" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="910683e1-d675-40bd-8bc3-8e9851cbcb8d">
+      <Execution id="9190200e-6d4e-48a8-9aba-c72d19bd9c80" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testSimpleDBThrowsNullReferenceException317" />
+    </UnitTest>
+    <UnitTest name="TestpexChooseThrowsNullReferenceException538" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="bdd22ceb-4303-9b36-bbb7-f6ed7084882d">
+      <Execution id="c534c324-3647-45d4-8e11-a020c7351388" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestpexChooseThrowsNullReferenceException538" />
+    </UnitTest>
+    <UnitTest name="testSimpleDBThrowsNullReferenceException15" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="2643eead-4338-8b48-582c-655b5bded259">
+      <Execution id="8710eee9-c374-4053-aaaa-48d2b282a60d" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testSimpleDBThrowsNullReferenceException15" />
+    </UnitTest>
+    <UnitTest name="testSimpleDBThrowsNullReferenceException539" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="e2c0f13f-fbd1-1447-478a-0d246c91fc7f">
+      <Execution id="246e1aa1-fd65-4088-bbf9-e59873a42088" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testSimpleDBThrowsNullReferenceException539" />
+    </UnitTest>
+    <UnitTest name="TestMain" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="467bbc26-d123-8fe0-f79e-4acbdff39ad4">
+      <Execution id="d8151430-7f47-4cee-9ccd-dd808e273143" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMain" />
+    </UnitTest>
+    <UnitTest name="testExampleThrowsNullReferenceException218" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="d9001b39-50d8-65d8-d838-2557fa203e0a">
+      <Execution id="ce5fee0d-1419-494e-8382-3b2b4161c8be" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testExampleThrowsNullReferenceException218" />
+    </UnitTest>
+    <UnitTest name="testExampleThrowsNullReferenceException573" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="ead4e9e4-3f60-fd6b-cb51-69de97d330cd">
+      <Execution id="77c10675-796c-4c12-9810-5202749ad6df" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testExampleThrowsNullReferenceException573" />
+    </UnitTest>
+    <UnitTest name="testSimpleDBThrowsNullReferenceException966" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="3aa674ad-3249-89e7-3070-2e182e5def8c">
+      <Execution id="e10d9124-8721-4f13-bda0-f612a301d8f1" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testSimpleDBThrowsNullReferenceException966" />
+    </UnitTest>
+    <UnitTest name="testSimpleDBThrowsNullReferenceException784" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="b34bda57-4969-c5da-2860-fb0790c68832">
+      <Execution id="1fefc665-b4f7-4332-a9a8-d6bb4c1278dc" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testSimpleDBThrowsNullReferenceException784" />
+    </UnitTest>
+    <UnitTest name="testExampleThrowsNullReferenceException138" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="119ae980-26fc-b6e3-244c-ea9b86a95244">
+      <Execution id="22d0ce56-d7b6-4ca2-afad-0518d8b47b68" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testExampleThrowsNullReferenceException138" />
+    </UnitTest>
+    <UnitTest name="testMe" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="e77281f7-102b-058d-de4c-d076845bcac1">
+      <Execution id="a2b84e9a-85ec-4b1f-b1c2-2525294c715a" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testMe" />
+    </UnitTest>
+    <UnitTest name="testSimpleDBThrowsNullReferenceException642" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="4fe69bf3-926a-3a92-c077-f26eb3dd58cc">
+      <Execution id="e078d941-f992-47bc-81a9-38efb4582c1c" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testSimpleDBThrowsNullReferenceException642" />
+    </UnitTest>
+    <UnitTest name="testExampleThrowsNullReferenceException688" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="36be011b-5df7-e081-6bac-870ac6372b5b">
+      <Execution id="6fe1adb7-e0b0-4c87-887c-a10095b89394" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testExampleThrowsNullReferenceException688" />
+    </UnitTest>
+    <UnitTest name="testSimpleDBThrowsNullReferenceException694" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="70b64d11-8ede-9ae2-6cf5-afde8e9fbf5d">
+      <Execution id="142e799c-6143-4367-98bc-31714a64a98c" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testSimpleDBThrowsNullReferenceException694" />
+    </UnitTest>
+    <UnitTest name="testSimpleDBThrowsNullReferenceException890" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="ff27357d-4a39-439f-dc88-a64081ad82fc">
+      <Execution id="16a03368-c0c4-421c-bf81-282e777a7087" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testSimpleDBThrowsNullReferenceException890" />
+    </UnitTest>
+    <UnitTest name="TestpexChoose01" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="593e2429-24e3-a27c-8a49-97a86f971acd">
+      <Execution id="82e9a306-c21a-4412-9fdf-987f10530e1a" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestpexChoose01" />
+    </UnitTest>
+    <UnitTest name="testSimpleDBThrowsNullReferenceException960" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="9ce9221b-4171-eede-0aaa-e2e522a8acc2">
+      <Execution id="b41ac394-850e-4258-9bf4-c91e93dd36fb" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testSimpleDBThrowsNullReferenceException960" />
+    </UnitTest>
+    <UnitTest name="testExampleThrowsNullReferenceException581" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="1e859a25-940e-6d3e-be89-3aec6469d327">
+      <Execution id="08775ea0-be1e-48a0-8bb5-64a504beea7f" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testExampleThrowsNullReferenceException581" />
+    </UnitTest>
+    <UnitTest name="testExampleThrowsNullReferenceException39" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="b426253d-eb30-4137-6f63-11f657be2905">
+      <Execution id="c3fa413d-0d16-495c-90d3-fbb958dd2971" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testExampleThrowsNullReferenceException39" />
+    </UnitTest>
+    <UnitTest name="testExampleThrowsNullReferenceException215" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="c86f4a03-eeca-4ff5-a747-d515b8e4ca3e">
+      <Execution id="a03e33e9-4681-4d18-99de-fb396e0662a0" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testExampleThrowsNullReferenceException215" />
+    </UnitTest>
+    <UnitTest name="TestpexChooseThrowsNullReferenceException544" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="1f741c7f-0dab-6297-4a52-14bbaa0c022e">
+      <Execution id="368ccca3-34fe-4a9f-9fd9-fc45c989040e" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestpexChooseThrowsNullReferenceException544" />
+    </UnitTest>
+    <UnitTest name="testSimpleDBThrowsNullReferenceException670" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="b42b3d9f-f1d7-e5cd-ffdf-fb07b8449428">
+      <Execution id="740a211b-21d1-4553-b71c-f82d8d678f34" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testSimpleDBThrowsNullReferenceException670" />
+    </UnitTest>
+    <UnitTest name="TestpexChooseThrowsNullReferenceException827" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="ed5e0ec3-0a43-6422-fe6f-385d20889b38">
+      <Execution id="fdfcc335-b212-4ac6-b05c-7791d4f0b64f" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestpexChooseThrowsNullReferenceException827" />
+    </UnitTest>
+    <UnitTest name="testExampleThrowsNullReferenceException58101" storage="c:\documents and settings\wei\桌面\taintsql\testdbapp\bin\debug\testdbapp.dll" id="631b869b-0b25-89bd-0b95-745f9d86243b">
+      <Execution id="2061e120-7ec5-4b1b-9fc9-7fd34dece744" />
+      <TestMethod codeBase="C:/Documents and Settings/Wei/桌面/TaintSQL/TestDBApp/bin/Debug/TestDBApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyApplication.PexTestClass, TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testExampleThrowsNullReferenceException58101" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="119ae980-26fc-b6e3-244c-ea9b86a95244" executionId="22d0ce56-d7b6-4ca2-afad-0518d8b47b68" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1e859a25-940e-6d3e-be89-3aec6469d327" executionId="08775ea0-be1e-48a0-8bb5-64a504beea7f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f741c7f-0dab-6297-4a52-14bbaa0c022e" executionId="368ccca3-34fe-4a9f-9fd9-fc45c989040e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2140dd50-2a44-4df5-1977-63c5cd95d262" executionId="e32eae9d-b1fd-4fd2-b183-18b858a3da1f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2643eead-4338-8b48-582c-655b5bded259" executionId="8710eee9-c374-4053-aaaa-48d2b282a60d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="36be011b-5df7-e081-6bac-870ac6372b5b" executionId="6fe1adb7-e0b0-4c87-887c-a10095b89394" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3aa674ad-3249-89e7-3070-2e182e5def8c" executionId="e10d9124-8721-4f13-bda0-f612a301d8f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="467bbc26-d123-8fe0-f79e-4acbdff39ad4" executionId="d8151430-7f47-4cee-9ccd-dd808e273143" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4fe69bf3-926a-3a92-c077-f26eb3dd58cc" executionId="e078d941-f992-47bc-81a9-38efb4582c1c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="593e2429-24e3-a27c-8a49-97a86f971acd" executionId="82e9a306-c21a-4412-9fdf-987f10530e1a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="631b869b-0b25-89bd-0b95-745f9d86243b" executionId="2061e120-7ec5-4b1b-9fc9-7fd34dece744" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="70b64d11-8ede-9ae2-6cf5-afde8e9fbf5d" executionId="142e799c-6143-4367-98bc-31714a64a98c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="910683e1-d675-40bd-8bc3-8e9851cbcb8d" executionId="9190200e-6d4e-48a8-9aba-c72d19bd9c80" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9ce9221b-4171-eede-0aaa-e2e522a8acc2" executionId="b41ac394-850e-4258-9bf4-c91e93dd36fb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a5e86886-2e74-5ffe-2246-e68777a3431f" executionId="2532862a-9ab8-4d69-9a22-1c8babd1ec61" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b34bda57-4969-c5da-2860-fb0790c68832" executionId="1fefc665-b4f7-4332-a9a8-d6bb4c1278dc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b426253d-eb30-4137-6f63-11f657be2905" executionId="c3fa413d-0d16-495c-90d3-fbb958dd2971" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b42b3d9f-f1d7-e5cd-ffdf-fb07b8449428" executionId="740a211b-21d1-4553-b71c-f82d8d678f34" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bdd22ceb-4303-9b36-bbb7-f6ed7084882d" executionId="c534c324-3647-45d4-8e11-a020c7351388" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c86f4a03-eeca-4ff5-a747-d515b8e4ca3e" executionId="a03e33e9-4681-4d18-99de-fb396e0662a0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d3bafb8e-3718-cd22-c477-e7f858cfb0b9" executionId="baec2fbc-9b30-4fe9-93e2-5f665f49bcd1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d9001b39-50d8-65d8-d838-2557fa203e0a" executionId="ce5fee0d-1419-494e-8382-3b2b4161c8be" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e2c0f13f-fbd1-1447-478a-0d246c91fc7f" executionId="246e1aa1-fd65-4088-bbf9-e59873a42088" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e77281f7-102b-058d-de4c-d076845bcac1" executionId="a2b84e9a-85ec-4b1f-b1c2-2525294c715a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ead4e9e4-3f60-fd6b-cb51-69de97d330cd" executionId="77c10675-796c-4c12-9810-5202749ad6df" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ed5e0ec3-0a43-6422-fe6f-385d20889b38" executionId="fdfcc335-b212-4ac6-b05c-7791d4f0b64f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ff27357d-4a39-439f-dc88-a64081ad82fc" executionId="16a03368-c0c4-421c-bf81-282e777a7087" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="22d0ce56-d7b6-4ca2-afad-0518d8b47b68" testId="119ae980-26fc-b6e3-244c-ea9b86a95244" testName="testExampleThrowsNullReferenceException138" computerName="PKU-AAF96026023" duration="00:00:00.1618543" startTime="2020-11-16T14:28:38.0071604+08:00" endTime="2020-11-16T14:28:38.7081684+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="22d0ce56-d7b6-4ca2-afad-0518d8b47b68">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testExampleThrowsNullReferenceException138 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 77
+   在 MockDBMS.SqlServer.MockSqlCommand.ExecuteScalar() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 1182
+   在 MyApplication.DBApplication.ExampleProgram(Int32 k, String[] names) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 53
+   在 MyApplication.PexTestClass.testExample(Int32 k, String[] n) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 241
+   在 MyApplication.PexTestClass.testExampleThrowsNullReferenceException138() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.testExample.g.cs:行号 92
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="08775ea0-be1e-48a0-8bb5-64a504beea7f" testId="1e859a25-940e-6d3e-be89-3aec6469d327" testName="testExampleThrowsNullReferenceException581" computerName="PKU-AAF96026023" duration="00:00:00.0893655" startTime="2020-11-16T14:28:38.7181828+08:00" endTime="2020-11-16T14:28:38.8283412+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="08775ea0-be1e-48a0-8bb5-64a504beea7f">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testExampleThrowsNullReferenceException581 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 77
+   在 MockDBMS.SqlServer.MockSqlCommand.ExecuteScalar() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 1182
+   在 MyApplication.DBApplication.ExampleProgram(Int32 k, String[] names) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 53
+   在 MyApplication.PexTestClass.testExample(Int32 k, String[] n) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 241
+   在 MyApplication.PexTestClass.testExampleThrowsNullReferenceException581() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.testExample.g.cs:行号 29
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="368ccca3-34fe-4a9f-9fd9-fc45c989040e" testId="1f741c7f-0dab-6297-4a52-14bbaa0c022e" testName="TestpexChooseThrowsNullReferenceException544" computerName="PKU-AAF96026023" duration="00:00:00.0072763" startTime="2020-11-16T14:28:38.8283412+08:00" endTime="2020-11-16T14:28:38.8483700+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="368ccca3-34fe-4a9f-9fd9-fc45c989040e">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.TestpexChooseThrowsNullReferenceException544 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MyApplication.PexTestClass.TestpexChoose() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 250
+   在 MyApplication.PexTestClass.TestpexChooseThrowsNullReferenceException544() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.TestpexChoose.g.cs:行号 26
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e32eae9d-b1fd-4fd2-b183-18b858a3da1f" testId="2140dd50-2a44-4df5-1977-63c5cd95d262" testName="testSimpleDBThrowsNullReferenceException165" computerName="PKU-AAF96026023" duration="00:00:00.0497370" startTime="2020-11-16T14:28:38.8483700+08:00" endTime="2020-11-16T14:28:38.9485140+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e32eae9d-b1fd-4fd2-b183-18b858a3da1f">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException165 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 77
+   在 MockDBMS.SqlServer.MockSqlCommand.ExecuteScalar() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 1182
+   在 MyApplication.PexTestClass.testSimpleDB(Int32 k, String[] n) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 272
+   在 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException165() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.testSimpleDB.g.cs:行号 142
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8710eee9-c374-4053-aaaa-48d2b282a60d" testId="2643eead-4338-8b48-582c-655b5bded259" testName="testSimpleDBThrowsNullReferenceException15" computerName="PKU-AAF96026023" duration="00:00:00.0045131" startTime="2020-11-16T14:28:38.9485140+08:00" endTime="2020-11-16T14:28:38.9585284+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8710eee9-c374-4053-aaaa-48d2b282a60d">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException15 引发了异常: 
+Microsoft.Pex.Framework.Exceptions.PexAssumeFailedException: 引发类型为“Microsoft.Pex.Framework.Exceptions.PexAssumeFailedException”的异常。</Message>
+          <StackTrace>    在 Microsoft.Pex.Framework.PexAssume.IsTrue(Boolean condition)
+   在 MyApplication.PexTestClass.testSimpleDB(Int32 k, String[] n) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 261
+   在 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException15() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.testSimpleDB.g.cs:行号 49
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6fe1adb7-e0b0-4c87-887c-a10095b89394" testId="36be011b-5df7-e081-6bac-870ac6372b5b" testName="testExampleThrowsNullReferenceException688" computerName="PKU-AAF96026023" duration="00:00:00.0020265" startTime="2020-11-16T14:28:38.9585284+08:00" endTime="2020-11-16T14:28:38.9685428+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6fe1adb7-e0b0-4c87-887c-a10095b89394">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testExampleThrowsNullReferenceException688 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 77
+   在 MockDBMS.SqlServer.MockSqlCommand.ExecuteScalar() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 1182
+   在 MyApplication.DBApplication.ExampleProgram(Int32 k, String[] names) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 53
+   在 MyApplication.PexTestClass.testExample(Int32 k, String[] n) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 241
+   在 MyApplication.PexTestClass.testExampleThrowsNullReferenceException688() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.testExample.g.cs:行号 39
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e10d9124-8721-4f13-bda0-f612a301d8f1" testId="3aa674ad-3249-89e7-3070-2e182e5def8c" testName="testSimpleDBThrowsNullReferenceException966" computerName="PKU-AAF96026023" duration="00:00:00.0014088" startTime="2020-11-16T14:28:38.9685428+08:00" endTime="2020-11-16T14:28:38.9785572+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e10d9124-8721-4f13-bda0-f612a301d8f1">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException966 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 77
+   在 MockDBMS.SqlServer.MockSqlCommand.ExecuteScalar() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 1182
+   在 MyApplication.PexTestClass.testSimpleDB(Int32 k, String[] n) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 272
+   在 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException966() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.testSimpleDB.g.cs:行号 84
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d8151430-7f47-4cee-9ccd-dd808e273143" testId="467bbc26-d123-8fe0-f79e-4acbdff39ad4" testName="TestMain" computerName="PKU-AAF96026023" duration="00:00:00.0053571" startTime="2020-11-16T14:28:38.9785572+08:00" endTime="2020-11-16T14:28:38.9885716+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d8151430-7f47-4cee-9ccd-dd808e273143">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.TestMain 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 77
+   在 MyApplication.DBApplication.Main() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 97
+   在 MyApplication.PexTestClass.TestMain() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 215
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e078d941-f992-47bc-81a9-38efb4582c1c" testId="4fe69bf3-926a-3a92-c077-f26eb3dd58cc" testName="testSimpleDBThrowsNullReferenceException642" computerName="PKU-AAF96026023" duration="00:00:00.0016608" startTime="2020-11-16T14:28:38.9885716+08:00" endTime="2020-11-16T14:28:38.9885716+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e078d941-f992-47bc-81a9-38efb4582c1c">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException642 引发了异常: 
+Microsoft.Pex.Framework.Exceptions.PexAssumeFailedException: 引发类型为“Microsoft.Pex.Framework.Exceptions.PexAssumeFailedException”的异常。</Message>
+          <StackTrace>    在 Microsoft.Pex.Framework.PexAssume.IsTrue(Boolean condition)
+   在 MyApplication.PexTestClass.testSimpleDB(Int32 k, String[] n) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 261
+   在 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException642() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.testSimpleDB.g.cs:行号 70
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="82e9a306-c21a-4412-9fdf-987f10530e1a" testId="593e2429-24e3-a27c-8a49-97a86f971acd" testName="TestpexChoose01" computerName="PKU-AAF96026023" duration="00:00:00.0009490" startTime="2020-11-16T14:28:38.9885716+08:00" endTime="2020-11-16T14:28:38.9985860+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="82e9a306-c21a-4412-9fdf-987f10530e1a">
+    </UnitTestResult>
+    <UnitTestResult executionId="2061e120-7ec5-4b1b-9fc9-7fd34dece744" testId="631b869b-0b25-89bd-0b95-745f9d86243b" testName="testExampleThrowsNullReferenceException58101" computerName="PKU-AAF96026023" duration="00:00:00.0039555" startTime="2020-11-16T14:28:38.9985860+08:00" endTime="2020-11-16T14:28:39.0086004+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2061e120-7ec5-4b1b-9fc9-7fd34dece744">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testExampleThrowsNullReferenceException58101 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 77
+   在 MockDBMS.SqlServer.MockSqlCommand.ExecuteScalar() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 1182
+   在 MyApplication.DBApplication.ExampleProgram(Int32 k, String[] names) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 53
+   在 MyApplication.PexTestClass.testExample(Int32 k, String[] n) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 241
+   在 MyApplication.PexTestClass.testExampleThrowsNullReferenceException58101() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.testExample.g.cs:行号 124
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="142e799c-6143-4367-98bc-31714a64a98c" testId="70b64d11-8ede-9ae2-6cf5-afde8e9fbf5d" testName="testSimpleDBThrowsNullReferenceException694" computerName="PKU-AAF96026023" duration="00:00:00.0026187" startTime="2020-11-16T14:28:39.0086004+08:00" endTime="2020-11-16T14:28:39.0086004+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="142e799c-6143-4367-98bc-31714a64a98c">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException694 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 77
+   在 MockDBMS.SqlServer.MockSqlCommand.ExecuteScalar() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 1182
+   在 MyApplication.PexTestClass.testSimpleDB(Int32 k, String[] n) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 272
+   在 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException694() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.testSimpleDB.g.cs:行号 189
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9190200e-6d4e-48a8-9aba-c72d19bd9c80" testId="910683e1-d675-40bd-8bc3-8e9851cbcb8d" testName="testSimpleDBThrowsNullReferenceException317" computerName="PKU-AAF96026023" duration="00:00:00.0018574" startTime="2020-11-16T14:28:39.0086004+08:00" endTime="2020-11-16T14:28:39.0186148+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9190200e-6d4e-48a8-9aba-c72d19bd9c80">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException317 引发了异常: 
+Microsoft.Pex.Framework.Exceptions.PexAssumeFailedException: 引发类型为“Microsoft.Pex.Framework.Exceptions.PexAssumeFailedException”的异常。</Message>
+          <StackTrace>    在 Microsoft.Pex.Framework.PexAssume.IsTrue(Boolean condition)
+   在 MyApplication.PexTestClass.testSimpleDB(Int32 k, String[] n) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 261
+   在 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException317() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.testSimpleDB.g.cs:行号 59
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b41ac394-850e-4258-9bf4-c91e93dd36fb" testId="9ce9221b-4171-eede-0aaa-e2e522a8acc2" testName="testSimpleDBThrowsNullReferenceException960" computerName="PKU-AAF96026023" duration="00:00:00.0046452" startTime="2020-11-16T14:28:39.0186148+08:00" endTime="2020-11-16T14:28:39.0286292+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b41ac394-850e-4258-9bf4-c91e93dd36fb">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException960 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 77
+   在 MockDBMS.SqlServer.MockSqlCommand.ExecuteScalar() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 1182
+   在 MyApplication.PexTestClass.testSimpleDB(Int32 k, String[] n) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 272
+   在 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException960() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.testSimpleDB.g.cs:行号 121
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2532862a-9ab8-4d69-9a22-1c8babd1ec61" testId="a5e86886-2e74-5ffe-2246-e68777a3431f" testName="TestpexChoose02" computerName="PKU-AAF96026023" duration="00:00:00.0232870" startTime="2020-11-16T14:28:39.0286292+08:00" endTime="2020-11-16T14:28:39.0586724+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2532862a-9ab8-4d69-9a22-1c8babd1ec61">
+    </UnitTestResult>
+    <UnitTestResult executionId="1fefc665-b4f7-4332-a9a8-d6bb4c1278dc" testId="b34bda57-4969-c5da-2860-fb0790c68832" testName="testSimpleDBThrowsNullReferenceException784" computerName="PKU-AAF96026023" duration="00:00:00.0015515" startTime="2020-11-16T14:28:39.0586724+08:00" endTime="2020-11-16T14:28:39.0586724+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1fefc665-b4f7-4332-a9a8-d6bb4c1278dc">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException784 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 77
+   在 MockDBMS.SqlServer.MockSqlCommand.ExecuteScalar() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 1182
+   在 MyApplication.PexTestClass.testSimpleDB(Int32 k, String[] n) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 272
+   在 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException784() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.testSimpleDB.g.cs:行号 102
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c3fa413d-0d16-495c-90d3-fbb958dd2971" testId="b426253d-eb30-4137-6f63-11f657be2905" testName="testExampleThrowsNullReferenceException39" computerName="PKU-AAF96026023" duration="00:00:00.0033766" startTime="2020-11-16T14:28:39.0586724+08:00" endTime="2020-11-16T14:28:39.0686868+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c3fa413d-0d16-495c-90d3-fbb958dd2971">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testExampleThrowsNullReferenceException39 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 77
+   在 MockDBMS.SqlServer.MockSqlCommand.ExecuteScalar() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 1182
+   在 MyApplication.DBApplication.ExampleProgram(Int32 k, String[] names) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 53
+   在 MyApplication.PexTestClass.testExample(Int32 k, String[] n) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 241
+   在 MyApplication.PexTestClass.testExampleThrowsNullReferenceException39() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.testExample.g.cs:行号 108
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="740a211b-21d1-4553-b71c-f82d8d678f34" testId="b42b3d9f-f1d7-e5cd-ffdf-fb07b8449428" testName="testSimpleDBThrowsNullReferenceException670" computerName="PKU-AAF96026023" duration="00:00:00.0024662" startTime="2020-11-16T14:28:39.0686868+08:00" endTime="2020-11-16T14:28:39.0787012+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="740a211b-21d1-4553-b71c-f82d8d678f34">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException670 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 77
+   在 MockDBMS.SqlServer.MockSqlCommand.ExecuteScalar() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 1182
+   在 MyApplication.PexTestClass.testSimpleDB(Int32 k, String[] n) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 272
+   在 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException670() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.testSimpleDB.g.cs:行号 165
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c534c324-3647-45d4-8e11-a020c7351388" testId="bdd22ceb-4303-9b36-bbb7-f6ed7084882d" testName="TestpexChooseThrowsNullReferenceException538" computerName="PKU-AAF96026023" duration="00:00:00.0029503" startTime="2020-11-16T14:28:39.0787012+08:00" endTime="2020-11-16T14:28:39.0887156+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c534c324-3647-45d4-8e11-a020c7351388">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.TestpexChooseThrowsNullReferenceException538 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MyApplication.PexTestClass.TestpexChoose() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 253
+   在 MyApplication.PexTestClass.TestpexChooseThrowsNullReferenceException538() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.TestpexChoose.g.cs:行号 36
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a03e33e9-4681-4d18-99de-fb396e0662a0" testId="c86f4a03-eeca-4ff5-a747-d515b8e4ca3e" testName="testExampleThrowsNullReferenceException215" computerName="PKU-AAF96026023" duration="00:00:00.0037652" startTime="2020-11-16T14:28:39.0887156+08:00" endTime="2020-11-16T14:28:39.0887156+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a03e33e9-4681-4d18-99de-fb396e0662a0">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testExampleThrowsNullReferenceException215 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 77
+   在 MockDBMS.SqlServer.MockSqlCommand.ExecuteScalar() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 1182
+   在 MyApplication.DBApplication.ExampleProgram(Int32 k, String[] names) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 53
+   在 MyApplication.PexTestClass.testExample(Int32 k, String[] n) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 241
+   在 MyApplication.PexTestClass.testExampleThrowsNullReferenceException215() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.testExample.g.cs:行号 50
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="baec2fbc-9b30-4fe9-93e2-5f665f49bcd1" testId="d3bafb8e-3718-cd22-c477-e7f858cfb0b9" testName="testExampleThrowsNullReferenceException241" computerName="PKU-AAF96026023" duration="00:00:00.0020259" startTime="2020-11-16T14:28:39.0887156+08:00" endTime="2020-11-16T14:28:39.0987300+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="baec2fbc-9b30-4fe9-93e2-5f665f49bcd1">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testExampleThrowsNullReferenceException241 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 77
+   在 MockDBMS.SqlServer.MockSqlCommand.ExecuteScalar() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 1182
+   在 MyApplication.DBApplication.ExampleProgram(Int32 k, String[] names) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 53
+   在 MyApplication.PexTestClass.testExample(Int32 k, String[] n) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 241
+   在 MyApplication.PexTestClass.testExampleThrowsNullReferenceException241() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.testExample.g.cs:行号 63
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ce5fee0d-1419-494e-8382-3b2b4161c8be" testId="d9001b39-50d8-65d8-d838-2557fa203e0a" testName="testExampleThrowsNullReferenceException218" computerName="PKU-AAF96026023" duration="00:00:00.0064469" startTime="2020-11-16T14:28:39.0987300+08:00" endTime="2020-11-16T14:28:39.1087444+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ce5fee0d-1419-494e-8382-3b2b4161c8be">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testExampleThrowsNullReferenceException218 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 77
+   在 MockDBMS.SqlServer.MockSqlCommand.ExecuteScalar() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 1182
+   在 MyApplication.DBApplication.ExampleProgram(Int32 k, String[] names) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 53
+   在 MyApplication.PexTestClass.testExample(Int32 k, String[] n) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 241
+   在 MyApplication.PexTestClass.testExampleThrowsNullReferenceException218() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.testExample.g.cs:行号 143
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="246e1aa1-fd65-4088-bbf9-e59873a42088" testId="e2c0f13f-fbd1-1447-478a-0d246c91fc7f" testName="testSimpleDBThrowsNullReferenceException539" computerName="PKU-AAF96026023" duration="00:00:00.0012331" startTime="2020-11-16T14:28:39.1087444+08:00" endTime="2020-11-16T14:28:39.1187588+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="246e1aa1-fd65-4088-bbf9-e59873a42088">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException539 引发了异常: 
+Microsoft.Pex.Framework.Exceptions.PexAssumeFailedException: 引发类型为“Microsoft.Pex.Framework.Exceptions.PexAssumeFailedException”的异常。</Message>
+          <StackTrace>    在 Microsoft.Pex.Framework.PexAssume.IsTrue(Boolean condition)
+   在 MyApplication.PexTestClass.testSimpleDB(Int32 k, String[] n) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 261
+   在 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException539() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.testSimpleDB.g.cs:行号 38
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a2b84e9a-85ec-4b1f-b1c2-2525294c715a" testId="e77281f7-102b-058d-de4c-d076845bcac1" testName="testMe" computerName="PKU-AAF96026023" duration="00:00:00.0146359" startTime="2020-11-16T14:28:39.1187588+08:00" endTime="2020-11-16T14:28:39.1387876+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a2b84e9a-85ec-4b1f-b1c2-2525294c715a">
+      <Output>
+        <StdOut>WHERE</StdOut>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testMe 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 40
+   在 MyApplication.DBApplication.TestMe() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 25
+   在 MyApplication.PexTestClass.testMe() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 220
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="77c10675-796c-4c12-9810-5202749ad6df" testId="ead4e9e4-3f60-fd6b-cb51-69de97d330cd" testName="testExampleThrowsNullReferenceException573" computerName="PKU-AAF96026023" duration="00:00:00.0023315" startTime="2020-11-16T14:28:39.1387876+08:00" endTime="2020-11-16T14:28:39.1488020+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="77c10675-796c-4c12-9810-5202749ad6df">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testExampleThrowsNullReferenceException573 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MockDBMS.SqlServer.MockSqlCommand.ExecuteReader() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 77
+   在 MockDBMS.SqlServer.MockSqlCommand.ExecuteScalar() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\SqlServerInterface\MockSqlCommand.cs:行号 1182
+   在 MyApplication.DBApplication.ExampleProgram(Int32 k, String[] names) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 53
+   在 MyApplication.PexTestClass.testExample(Int32 k, String[] n) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 241
+   在 MyApplication.PexTestClass.testExampleThrowsNullReferenceException573() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.testExample.g.cs:行号 78
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fdfcc335-b212-4ac6-b05c-7791d4f0b64f" testId="ed5e0ec3-0a43-6422-fe6f-385d20889b38" testName="TestpexChooseThrowsNullReferenceException827" computerName="PKU-AAF96026023" duration="00:00:00.0011945" startTime="2020-11-16T14:28:39.1488020+08:00" endTime="2020-11-16T14:28:39.1488020+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fdfcc335-b212-4ac6-b05c-7791d4f0b64f">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.TestpexChooseThrowsNullReferenceException827 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 MyApplication.PexTestClass.TestpexChoose() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 253
+   在 MyApplication.PexTestClass.TestpexChooseThrowsNullReferenceException827() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.TestpexChoose.g.cs:行号 73
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="16a03368-c0c4-421c-bf81-282e777a7087" testId="ff27357d-4a39-439f-dc88-a64081ad82fc" testName="testSimpleDBThrowsNullReferenceException890" computerName="PKU-AAF96026023" duration="00:00:00.0010836" startTime="2020-11-16T14:28:39.1488020+08:00" endTime="2020-11-16T14:28:39.1588164+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="16a03368-c0c4-421c-bf81-282e777a7087">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException890 引发了异常: 
+Microsoft.Pex.Framework.Exceptions.PexAssumeFailedException: 引发类型为“Microsoft.Pex.Framework.Exceptions.PexAssumeFailedException”的异常。</Message>
+          <StackTrace>    在 Microsoft.Pex.Framework.PexAssume.IsTrue(Boolean condition)
+   在 MyApplication.PexTestClass.testSimpleDB(Int32 k, String[] n) 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\DBApplication.cs:行号 261
+   在 MyApplication.PexTestClass.testSimpleDBThrowsNullReferenceException890() 位置 C:\Documents and Settings\Wei\桌面\TaintSQL\TestDBApp\PexTestClass.testSimpleDB.g.cs:行号 28
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
