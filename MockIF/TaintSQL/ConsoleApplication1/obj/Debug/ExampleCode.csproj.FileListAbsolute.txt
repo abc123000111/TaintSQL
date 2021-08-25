@@ -1,0 +1,44 @@
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\bin\Debug\MockDBMS.dll
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\bin\Debug\MacroScope.dll
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\bin\Debug\Antlr3.Runtime.dll
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\bin\Debug\MockDBMS.pdb
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\bin\Debug\MacroScope.pdb
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Documents and Settings\Wei\桌面\moda_cs527\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Documents and Settings\Wei\桌面\TaintSQL\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Documents and Settings\Wei\桌面\TaintSQL\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Documents and Settings\Wei\桌面\TaintSQL\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Documents and Settings\Wei\桌面\TaintSQL\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Documents and Settings\Wei\桌面\TaintSQL\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Documents and Settings\Wei\桌面\TaintSQL\ConsoleApplication1\bin\Debug\MockDBMS.dll
+C:\Documents and Settings\Wei\桌面\TaintSQL\ConsoleApplication1\bin\Debug\MacroScope.dll
+C:\Documents and Settings\Wei\桌面\TaintSQL\ConsoleApplication1\bin\Debug\Antlr3.Runtime.dll
+C:\Documents and Settings\Wei\桌面\TaintSQL\ConsoleApplication1\bin\Debug\MockDBMS.pdb
+C:\Documents and Settings\Wei\桌面\TaintSQL\ConsoleApplication1\bin\Debug\MacroScope.pdb
+C:\Documents and Settings\Wei\桌面\TaintSQL\ConsoleApplication1\obj\Debug\ResolveAssemblyReference.cache
+C:\TaintSQL\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\TaintSQL\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\TaintSQL\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\TaintSQL\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\TaintSQL\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\TaintSQL\ConsoleApplication1\bin\Debug\MockDBMS.dll
+C:\TaintSQL\ConsoleApplication1\bin\Debug\MacroScope.dll
+C:\TaintSQL\ConsoleApplication1\bin\Debug\Antlr3.Runtime.dll
+C:\TaintSQL\ConsoleApplication1\bin\Debug\MockDBMS.pdb
+C:\TaintSQL\ConsoleApplication1\bin\Debug\MacroScope.pdb
+C:\TaintSQL\ConsoleApplication1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\linwei\Desktop\MockIF\TaintSQL\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\linwei\Desktop\MockIF\TaintSQL\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\linwei\Desktop\MockIF\TaintSQL\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\linwei\Desktop\MockIF\TaintSQL\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\linwei\Desktop\MockIF\TaintSQL\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\linwei\Desktop\MockIF\TaintSQL\ConsoleApplication1\bin\Debug\MockDBMS.dll
+C:\Users\linwei\Desktop\MockIF\TaintSQL\ConsoleApplication1\bin\Debug\MacroScope.dll
+C:\Users\linwei\Desktop\MockIF\TaintSQL\ConsoleApplication1\bin\Debug\Antlr3.Runtime.dll
+C:\Users\linwei\Desktop\MockIF\TaintSQL\ConsoleApplication1\bin\Debug\MockDBMS.pdb
+C:\Users\linwei\Desktop\MockIF\TaintSQL\ConsoleApplication1\bin\Debug\MacroScope.pdb
+C:\Users\linwei\Desktop\MockIF\TaintSQL\ConsoleApplication1\obj\Debug\ExampleCode.csprojResolveAssemblyReference.cache

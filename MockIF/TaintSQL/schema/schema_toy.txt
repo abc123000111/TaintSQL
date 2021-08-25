@@ -1,0 +1,9 @@
+﻿CREATE TABLE PERSONS (
+index int,
+name varchar(255)
+)
+
+CREATE TABLE USER (
+name varchar(255),
+password varchar(255)
+)

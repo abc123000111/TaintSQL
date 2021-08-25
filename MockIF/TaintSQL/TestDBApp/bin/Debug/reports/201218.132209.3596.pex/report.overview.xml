@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?><pex id="{5fad466e-29aa-4cf7-9251-38bc7ea5a0a9}" creationTime="2020-12-18 05:22:09Z" configuration="MyApplication!\PexTestClass!\filterMaritalStatus2!" created="2020-12-18 05:22:09Z" pexVersion="0.94.51006.1" xml="C:\TaintSQL\TestDBApp\bin\Debug\reports\201218.132209.3596.pex\report.per" html="C:\TaintSQL\TestDBApp\bin\Debug\reports\201218.132209.3596.pex\report.html"><environment commandLine="&quot;C:\Program Files\Microsoft Pex\bin\Microsoft.Pex.exe&quot; C:\TaintSQL\TestDBApp\bin\Debug\TestDBApp.dll /membernamefilter:M:filterMaritalStatus2! /methodnamefilter:filterMaritalStatus2! /namespacefilter:MyApplication! /typefilter:PexTestClass! /x64failsilently /clrversion:v4.0.30319 /referencedprojectassemblies:MockDBMS /donotopenreport /reportlevel:Xml /reportrootpath:C:\TaintSQL\TestDBApp\bin\Debug\reports /testframework:VisualStudioUnitTest /testlanguage:cs /testprojectfile:C:\TaintSQL\TestDBApp\TestDBApp.csproj /testprojectnotupdate /testprojectskip" machineName="LINWEI6D15" osVersion="Microsoft Windows NT 5.1.2600 Service Pack 3" processorCount="4" clrVersion="4.0.30319.1" bitness="x86" user="Administrator"><envVars><envVar name="HOMEPATH" value="\Documents and Settings\Administrator"/>
+<envVar name="COMPUTERNAME" value="LINWEI6D15"/>
+<envVar name="CLRMONITOR_INJECT_TYPES" value=""/>
+<envVar name="COMPLUS_ProfAPI_ProfilerCompatibilitySetting" value="EnableV2Profiler"/>
+<envVar name="TMP" value="C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp"/>
+<envVar name="PROCESSOR_REVISION" value="8e0a"/>
+<envVar name="CLRMONITOR_INSTRUMENT_TYPES_EXCLUSIONS" value=""/>
+<envVar name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH"/>
+<envVar name="COMPLUS_DEFAULTVERSION" value="v4.0.30319"/>
+<envVar name="CLRMONITOR_CLSID" value="{21bbb412-71ac-41f9-a377-48529a4859cf}"/>
+<envVar name="CommonProgramFiles" value="C:\Program Files\Common Files"/>
+<envVar name="TEMP" value="C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp"/>
+<envVar name="CLRMONITOR_PROTECT_TYPES" value="Microsoft.FSharp.Text.Printf,Microsoft.FSharp.Text.PrintfImpl"/>
+<envVar name="CLRMONITOR_INJECT_ASSEMBLIES" value=""/>
+<envVar name="CLIENTNAME" value="Console"/>
+<envVar name="CLRMONITOR_INITIALIZED" value="0x12"/>
+<envVar name="USERDOMAIN" value="LINWEI6D15"/>
+<envVar name="windir" value="C:\WINDOWS"/>
+<envVar name="CLRMONITOR_ERASE_FINALIZER_TYPES" value=""/>
+<envVar name="CLRMONITOR_INJECT_NAMESPACES" value=""/>
+<envVar name="PROCESSOR_IDENTIFIER" value="x86 Family 6 Model 142 Stepping 10, GenuineIntel"/>
+<envVar name="Path" value="C:\Program Files\Parallels\Parallels Tools\Applications;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\"/>
+<envVar name="pex_wait_for_server_channel" value="1"/>
+<envVar name="PROCESSOR_LEVEL" value="6"/>
+<envVar name="CLRMONITOR_INSTRUMENT_NAMESPACES_EXCLUSIONS" value=""/>
+<envVar name="CLRMONITOR_FLAGS" value=""/>
+<envVar name="pex_instrumentation" value="1"/>
+<envVar name="SESSIONNAME" value="Console"/>
+<envVar name="CLRMONITOR_INSTRUMENT_TYPES" value="System.Array,System.Array+ArrayEnumerator,System.Array+FunctorComparer`1,System.Array+SZArrayEnumerator,System.Array+SorterGenericArray,System.Array+SorterObjectArray,System.Boolean,System.Byte,System.Char,System.CharEnumerator,System.ComponentModel.Component,System.ComponentModel.Container,System.ComponentModel.Container+Site,System.Convert,System.Currency,System.DateTime,System.Decimal,System.Diagnostics.Assert,System.Double,System.Globalization.CharUnicodeInfo,System.Globalization.CultureTableRecord,System.Globalization.TextInfo,System.Guid,System.IO.MemoryStream,System.IO.Stream,System.IO.StreamReader,System.IO.StreamWriter,System.IO.StringReader,System.IO.StringWriter,System.Int16,System.Int32,System.Int64,System.Lazy`1,System.Lazy`1+Boxed,System.Lazy`1+LazyInternalExceptionHolder,System.Math,System.Nullable,System.Nullable`1,System.OrdinalComparer,System.SByte,System.SZArrayHelper,System.SZArrayHelper+SZGenericArrayEnumerator`1,System.Single,System.String,System.StringComparer,System.Text.ASCIIEncoding,System.Text.DecoderNLS,System.Text.Encoding,System.Text.UTF8Encoding,System.TimeSpan,System.Tuple,System.Tuple`1,System.Tuple`2,System.Tuple`3,System.Tuple`4,System.Tuple`5,System.Tuple`6,System.Tuple`7,System.Tuple`8,System.UInt16,System.UInt32,System.UInt64,System.Xml.XmlTextWriter,System.Xml.XmlTextWriter+Namespace,System.Xml.XmlTextWriter+NamespaceState,System.Xml.XmlTextWriter+SpecialAttr,System.Xml.XmlTextWriter+State,System.Xml.XmlTextWriter+TagInfo,System.Xml.XmlTextWriter+Token,System.Xml.XmlWriter,__Box`1,__SzArrayHelper`1"/>
+<envVar name="VisualStudioDir" value="\\Mac\Home\Documents\Visual Studio 2010"/>
+<envVar name="ProgramFiles" value="C:\Program Files"/>
+<envVar name="CLRMONITOR_ERASE_CCTOR_TYPES" value=""/>
+<envVar name="FP_NO_HOST_CHECK" value="NO"/>
+<envVar name="pex_clientid" value="pex4048_1"/>
+<envVar name="NUMBER_OF_PROCESSORS" value="4"/>
+<envVar name="SystemRoot" value="C:\WINDOWS"/>
+<envVar name="CLRMONITOR_INSTRUMENT_ATTRIBUTE" value="Microsoft.Moles.Framework.Moles.MolesInstrumentAttribute"/>
+<envVar name="CLRMONITOR_PROTECT_ALL_CCTORS" value="1"/>
+<envVar name="LOGONSERVER" value="\\LINWEI6D15"/>
+<envVar name="USERPROFILE" value="C:\Documents and Settings\Administrator"/>
+<envVar name="CLRMONITOR_SUBSTITUTIONS" value="C:\WINDOWS\assembly\GAC_MSIL\Microsoft.ExtendedReflection\0.94.0.0__31bf3856ad364e35\Microsoft.ExtendedReflection.dll"/>
+<envVar name="CLRMONITOR_INSTRUMENT_ASSEMBLIES_EXCLUSIONS" value="Microsoft.VisualBasic"/>
+<envVar name="APPDATA" value="C:\Documents and Settings\Administrator\Application Data"/>
+<envVar name="HOMEDRIVE" value="C:"/>
+<envVar name="ComSpec" value="C:\WINDOWS\system32\cmd.exe"/>
+<envVar name="VS100COMNTOOLS" value="c:\Program Files\Microsoft Visual Studio 10.0\Common7\Tools\"/>
+<envVar name="USERNAME" value="Administrator"/>
+<envVar name="COR_PROFILER" value="{21bbb412-71ac-41f9-a377-48529a4859cf}"/>
+<envVar name="PROCESSOR_ARCHITECTURE" value="x86"/>
+<envVar name="pex_server_channel" value="pex4048"/>
+<envVar name="OS" value="Windows_NT"/>
+<envVar name="CLRMONITOR_INSTRUMENT_NAMESPACES" value="System.Collections,System.Collections.Generic,System.Collections.ObjectModel,System.Collections.Specialized,System.Diagnostics.Contracts"/>
+<envVar name="SystemDrive" value="C:"/>
+<envVar name="CLRMONITOR_INSTRUMENT_ASSEMBLIES" value="FSharp.Core,FSharp.PowerPack,MacroScope,Microsoft.Contracts,Microsoft.VisualBasic,Microsoft.VisualStudio.QualityTools.UnitTestFramework,MockDBMS,ParsedQuery,System,System.Core,System.Web,TestDBApp"/>
+<envVar name="ALLUSERSPROFILE" value="C:\Documents and Settings\All Users"/>
+</envVars>
+</environment>
+<settings/>
+<reflection><existingTest method="TestMarketMSShowAllCheckInLogByID87" type="MyApplication.PexTestClass" token="6000001" generated="true"/>
+<existingTest method="TestMarketMSShowAllCheckInLogByID8701" type="MyApplication.PexTestClass" token="6000002" generated="true"/>
+<existingTest method="TestMarketMSShowAllCheckInLogByID8702" type="MyApplication.PexTestClass" token="6000003" generated="true"/>
+<existingTest method="TestOdysseyGetExistingFaves548" type="MyApplication.PexTestClass" token="6000012" generated="true"/>
+<existingTest method="TestOdysseyGetExistingFaves949" type="MyApplication.PexTestClass" token="6000014" generated="true"/>
+<existingTest method="TestOdysseyGetExistingFaves28701" type="MyApplication.PexTestClass" token="600001c" generated="true"/>
+<existingTest method="TestOdysseyGetExistingFaves41101" type="MyApplication.PexTestClass" token="600001f" generated="true"/>
+<existingTest method="TestOdysseyGetExistingFaves45301" type="MyApplication.PexTestClass" token="600001b" generated="true"/>
+<existingTest method="TestOdysseyGetExistingFaves47101" type="MyApplication.PexTestClass" token="6000019" generated="true"/>
+<existingTest method="TestOdysseyGetExistingFaves47102" type="MyApplication.PexTestClass" token="6000024" generated="true"/>
+<existingTest method="TestOdysseyGetExistingFaves50801" type="MyApplication.PexTestClass" token="600001d" generated="true"/>
+<existingTest method="TestOdysseyGetExistingFaves54802" type="MyApplication.PexTestClass" token="6000013" generated="true"/>
+<existingTest method="TestOdysseyGetExistingFaves54805" type="MyApplication.PexTestClass" token="6000015" generated="true"/>
+<existingTest method="TestOdysseyGetExistingFaves54807" type="MyApplication.PexTestClass" token="6000018" generated="true"/>
+<existingTest method="TestOdysseyGetExistingFaves54808" type="MyApplication.PexTestClass" token="6000017" generated="true"/>
+<existingTest method="TestOdysseyGetExistingFaves54809" type="MyApplication.PexTestClass" token="6000016" generated="true"/>
+<existingTest method="TestOdysseyGetExistingFaves54813" type="MyApplication.PexTestClass" token="6000020" generated="true"/>
+<existingTest method="TestOdysseyGetExistingFaves54814" type="MyApplication.PexTestClass" token="6000021" generated="true"/>
+<existingTest method="TestOdysseyGetExistingFaves54815" type="MyApplication.PexTestClass" token="6000022" generated="true"/>
+<existingTest method="TestOdysseyGetExistingFaves83401" type="MyApplication.PexTestClass" token="600001e" generated="true"/>
+<existingTest method="TestOdysseyGetExistingFaves85901" type="MyApplication.PexTestClass" token="600001a" generated="true"/>
+<existingTest method="TestOdysseyGetExistingFaves94902" type="MyApplication.PexTestClass" token="6000023" generated="true"/>
+<existingTest method="TestpexChoose01" type="MyApplication.PexTestClass" token="6000026" generated="true"/>
+<existingTest method="TestpexChoose02" type="MyApplication.PexTestClass" token="6000027" generated="true"/>
+<existingTest method="TestpexChoose05" type="MyApplication.PexTestClass" token="6000028" generated="true"/>
+<existingTest method="TestpexChooseThrowsNullReferenceException486" type="MyApplication.PexTestClass" token="6000025" generated="true" failure="true" exceptionType="System.NullReferenceException"/>
+</reflection>
+<assembly name="TestDBApp" version="1.0.0.0" fileVersion="1.0.0.0" fullName="TestDBApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" location="C:\TaintSQL\TestDBApp\bin\Debug\TestDBApp.dll" fileName="TestDBApp.dll"><settings testFramework="VisualStudioUnitTest" testLanguage="cs"/>
+<fixture name="PexTestClass" type="MyApplication.PexTestClass" typeName="PexTestClass" token="2000002" href="fix\TestDBApp.567.html"><type spec="Class"><definition assemblyName="TestDBApp" name="PexTestClass" token="2000002" namespace="MyApplication"/>
+</type>
+<exploration shortName="filterMaritalStatus2()" fullName="MyApplication.PexTestClass.filterMaritalStatus2()"><settings maxBranches="80000" maxRunsWithoutNewTests="200"/>
+<log level="message" time="2020-12-18 05:22:09Z" category="symbols" message="could not load symbols for C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll"/>
+<log level="message" time="2020-12-18 05:22:09Z" category="symbols" message="search path: ;"/>
+<uninstrumented testability="true" methodDisplayName="System.String[] System.IO.File.ReadAllLines(System.String path)" declaringTypeDisplayName="System.IO.File" methodShortDisplayName="File.ReadAllLines(String)" wikiTopic="Testability Issue"/>
+<uninstrumented methodDisplayName="System.Void System.IO.TextReader..ctor()" declaringTypeDisplayName="System.IO.TextReader" methodShortDisplayName="TextReader..ctor()" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented testability="true" methodDisplayName="System.Void System.IO.FileStream..ctor(System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options)" declaringTypeDisplayName="System.IO.FileStream" methodShortDisplayName="FileStream..ctor(String, FileMode, FileAccess, FileShare, Int32, FileOptions)" wikiTopic="Testability Issue"/>
+<uninstrumented methodDisplayName="System.Void System.Text.Decoder..ctor()" declaringTypeDisplayName="System.Text.Decoder" methodShortDisplayName="Decoder..ctor()" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented methodDisplayName="System.Void System.Text.UTF8Encoding+UTF8Decoder.Reset()" declaringTypeDisplayName="System.Text.UTF8Encoding+UTF8Decoder" methodShortDisplayName="UTF8Decoder.Reset()" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented methodDisplayName="System.Int32 System.Text.DecoderReplacementFallback.get_MaxCharCount()" declaringTypeDisplayName="System.Text.DecoderReplacementFallback" methodShortDisplayName="DecoderReplacementFallback.get_MaxCharCount()" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented testability="true" methodDisplayName="System.Int32 System.IO.FileStream.Read(System.Byte[] array, System.Int32 offset, System.Int32 count)" declaringTypeDisplayName="System.IO.FileStream" methodShortDisplayName="FileStream.Read(Byte[], Int32, Int32)" wikiTopic="Testability Issue"/>
+<uninstrumented extern="true" methodDisplayName="System.Void System.Buffer.InternalBlockCopy(System.Array src, System.Int32 srcOffsetBytes, System.Array dst, System.Int32 dstOffsetBytes, System.Int32 byteCount)" declaringTypeDisplayName="System.Buffer" methodShortDisplayName="Buffer.InternalBlockCopy(Array, Int32, Array, Int32, Int32)" wikiTopic="External Method Called"/>
+<uninstrumented methodDisplayName="System.Void System.IO.TextReader.Dispose(System.Boolean disposing)" declaringTypeDisplayName="System.IO.TextReader" methodShortDisplayName="TextReader.Dispose(Boolean)" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented extern="true" methodDisplayName="System.Int32 System.Globalization.TextInfo.InternalCompareStringOrdinalIgnoreCase(System.String string1, System.Int32 index1, System.String string2, System.Int32 index2, System.Int32 length1, System.Int32 length2)" declaringTypeDisplayName="System.Globalization.TextInfo" methodShortDisplayName="TextInfo.InternalCompareStringOrdinalIgnoreCase(String, Int32, String, Int32, Int32, Int32)" wikiTopic="External Method Called"/>
+<uninstrumented methodDisplayName="System.Void Antlr.Runtime.ANTLRStringStream..ctor(System.String input)" declaringTypeDisplayName="Antlr.Runtime.ANTLRStringStream" methodShortDisplayName="ANTLRStringStream..ctor(String)" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented methodDisplayName="System.Void Antlr.Runtime.Lexer..ctor(Antlr.Runtime.ICharStream input)" declaringTypeDisplayName="Antlr.Runtime.Lexer" methodShortDisplayName="Lexer..ctor(ICharStream)" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented methodDisplayName="System.Void Antlr.Runtime.DFA..ctor()" declaringTypeDisplayName="Antlr.Runtime.DFA" methodShortDisplayName="DFA..ctor()" wikiTopic="Uninstrumented Method Called"/>
+<log level="message" time="2020-12-18 05:22:09Z" category="symbols" message="could not load symbols for C:\TaintSQL\TestDBApp\bin\Debug\Antlr3.Runtime.dll"/>
+<uninstrumented methodDisplayName="System.Void Antlr.Runtime.CommonTokenStream..ctor(Antlr.Runtime.ITokenSource tokenSource)" declaringTypeDisplayName="Antlr.Runtime.CommonTokenStream" methodShortDisplayName="CommonTokenStream..ctor(ITokenSource)" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented methodDisplayName="System.Void Antlr.Runtime.Parser..ctor(Antlr.Runtime.ITokenStream input)" declaringTypeDisplayName="Antlr.Runtime.Parser" methodShortDisplayName="Parser..ctor(ITokenStream)" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented methodDisplayName="System.Int32 Antlr.Runtime.CommonTokenStream.LA(System.Int32 i)" declaringTypeDisplayName="Antlr.Runtime.CommonTokenStream" methodShortDisplayName="CommonTokenStream.LA(Int32)" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented methodDisplayName="System.Void Antlr.Runtime.Lexer.Match(System.String s)" declaringTypeDisplayName="Antlr.Runtime.Lexer" methodShortDisplayName="Lexer.Match(String)" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented methodDisplayName="System.Void Antlr.Runtime.ANTLRStringStream.Consume()" declaringTypeDisplayName="Antlr.Runtime.ANTLRStringStream" methodShortDisplayName="ANTLRStringStream.Consume()" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented methodDisplayName="System.Void Antlr.Runtime.Lexer.Match(System.Int32 c)" declaringTypeDisplayName="Antlr.Runtime.Lexer" methodShortDisplayName="Lexer.Match(Int32)" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented methodDisplayName="System.Void Antlr.Runtime.Lexer.MatchRange(System.Int32 a, System.Int32 b)" declaringTypeDisplayName="Antlr.Runtime.Lexer" methodShortDisplayName="Lexer.MatchRange(Int32, Int32)" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented methodDisplayName="System.Int32 Antlr.Runtime.DFA.Predict(Antlr.Runtime.IIntStream input)" declaringTypeDisplayName="Antlr.Runtime.DFA" methodShortDisplayName="DFA.Predict(IIntStream)" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented methodDisplayName="System.Int32 Antlr.Runtime.ANTLRStringStream.Index()" declaringTypeDisplayName="Antlr.Runtime.ANTLRStringStream" methodShortDisplayName="ANTLRStringStream.Index()" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented methodDisplayName="System.Void Antlr.Runtime.ANTLRStringStream.Rewind()" declaringTypeDisplayName="Antlr.Runtime.ANTLRStringStream" methodShortDisplayName="ANTLRStringStream.Rewind()" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented methodDisplayName="System.Void Antlr.Runtime.ANTLRStringStream.Seek(System.Int32 index)" declaringTypeDisplayName="Antlr.Runtime.ANTLRStringStream" methodShortDisplayName="ANTLRStringStream.Seek(Int32)" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented methodDisplayName="System.Void Antlr.Runtime.BaseRecognizer.PushFollow(Antlr.Runtime.BitSet fset)" declaringTypeDisplayName="Antlr.Runtime.BaseRecognizer" methodShortDisplayName="BaseRecognizer.PushFollow(BitSet)" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented methodDisplayName="System.Void Antlr.Runtime.BaseRecognizer.Match(Antlr.Runtime.IIntStream input, System.Int32 ttype, Antlr.Runtime.BitSet follow)" declaringTypeDisplayName="Antlr.Runtime.BaseRecognizer" methodShortDisplayName="BaseRecognizer.Match(IIntStream, Int32, BitSet)" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented methodDisplayName="Antlr.Runtime.IToken Antlr.Runtime.CommonTokenStream.LT(System.Int32 k)" declaringTypeDisplayName="Antlr.Runtime.CommonTokenStream" methodShortDisplayName="CommonTokenStream.LT(Int32)" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented methodDisplayName="System.String Antlr.Runtime.CommonToken.get_Text()" declaringTypeDisplayName="Antlr.Runtime.CommonToken" methodShortDisplayName="CommonToken.get_Text()" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented testability="true" methodDisplayName="System.Void System.Random..ctor()" declaringTypeDisplayName="System.Random" methodShortDisplayName="Random..ctor()" wikiTopic="Testability Issue"/>
+<uninstrumented testability="true" methodDisplayName="System.Int32 System.Random.Next(System.Int32 maxValue)" declaringTypeDisplayName="System.Random" methodShortDisplayName="Random.Next(Int32)" wikiTopic="Testability Issue"/>
+<uninstrumented methodDisplayName="System.Int32 Antlr.Runtime.Lexer.get_CharIndex()" declaringTypeDisplayName="Antlr.Runtime.Lexer" methodShortDisplayName="Lexer.get_CharIndex()" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented methodDisplayName="System.Void Antlr.Runtime.CommonToken..ctor(Antlr.Runtime.ICharStream input, System.Int32 type, System.Int32 channel, System.Int32 start, System.Int32 stop)" declaringTypeDisplayName="Antlr.Runtime.CommonToken" methodShortDisplayName="CommonToken..ctor(ICharStream, Int32, Int32, Int32, Int32)" wikiTopic="Uninstrumented Method Called"/>
+<generatedTest id="748f51b8-cf7b-4dbb-8bbf-716abe14ad18" index="1" run="1" status="normaltermination" generated="true" new="true" assemblyName="TestDBApp" name="filterMaritalStatus2742"/>
+<log level="message" time="2020-12-18 05:22:11Z" category="coverage" message="coverage increased from 0 to 218 blocks (+218) after flipping System.Text.UTF8Encoding.GetChars at 0x002e"/>
+<uninstrumented methodDisplayName="System.Int32 System.ParseNumbers.StringToInt(System.String s, System.Int32 radix, System.Int32 flags)" declaringTypeDisplayName="System.ParseNumbers" methodShortDisplayName="ParseNumbers.StringToInt(String, Int32, Int32)" wikiTopic="Uninstrumented Method Called"/>
+<uninstrumented extern="true" methodDisplayName="System.String System.ParseNumbers.IntToString(System.Int32 l, System.Int32 radix, System.Int32 width, System.Char paddingChar, System.Int32 flags)" declaringTypeDisplayName="System.ParseNumbers" methodShortDisplayName="ParseNumbers.IntToString(Int32, Int32, Int32, Char, Int32)" wikiTopic="External Method Called"/>
+<generatedTest id="76e2175a-9ca9-4443-be83-d97b1cdefea3" index="2" run="21" status="normaltermination" generated="true" new="true" assemblyName="TestDBApp" name="filterMaritalStatus274201"/>
+<log level="message" time="2020-12-18 05:22:13Z" category="coverage" message="coverage increased from 218 to 301 blocks (+83) after flipping Microsoft.Pex.Framework.PexAssume.IsNotNull at 0x0001"/>
+<generatedTest id="1465edca-00fc-4934-9a78-23ffe895dac1" index="3" run="22" status="normaltermination" generated="true" new="true" assemblyName="TestDBApp" name="filterMaritalStatus2288"/>
+<log level="message" time="2020-12-18 05:22:13Z" category="coverage" message="coverage increased from 301 to 308 blocks (+7) after flipping MyApplication.PexTestClass.filterMaritalStatus2 at 0x004c"/>
+<generatedTest id="620c5465-5eba-4fa5-b671-cfceb042fc8c" index="4" run="46" status="normaltermination" generated="true" new="true" assemblyName="TestDBApp" name="filterMaritalStatus274202"/>
+<generatedTest id="dc5cd583-87dc-4d8e-a3c8-bfb660ebabd7" index="5" run="57" status="normaltermination" generated="true" new="true" assemblyName="TestDBApp" name="filterMaritalStatus2558"/>
+<log level="message" time="2020-12-18 05:22:18Z" category="progress" message="   67 runs, 308/816 blocks covered"/>
+<log level="message" time="2020-12-18 05:22:31Z" category="progress" message="  125 runs (20.00% satisfied assumptions), 308/816 blocks covered"/>
+<log level="message" time="2020-12-18 05:22:45Z" category="progress" message="  179 runs (24.58% satisfied assumptions), 308/816 blocks covered"/>
+<log level="message" time="2020-12-18 05:22:53Z" category="progress" message="  250 constraint systems (80.80% solved, 19.20% proven unsatisfiable), flipping location PexAssume.IsTrue(Boolean) at 0x0001 took 3s (38.20%)"/>
+<log level="message" time="2020-12-18 05:23:01Z" category="progress" message="  227 runs (29.96% satisfied assumptions), 308/816 blocks covered"/>
+<boundary kind="cancelled" value="true" message="cancellation requested"/>
+<coverage domain="usercodeundertest" unit="block" covered="308" total="816" coveredRatio="0.37745098039215685"/>
+<coverage domain="usercodeundertest" unit="asserts" covered="4" total="11" coveredRatio="0.36363636363636365"/>
+<sourceCoverage xml="cov\e317\cov.xml" html="cov\e317\cov.html"/>
+<goal kind="assert reachability by id" reached="true" runCount="236"/>
+<result name="filterMaritalStatus2()" state="success" duration="55.5186262290842"/>
+<duration start="2020-12-18 05:22:09Z" end="2020-12-18 05:23:04Z" seconds="55.546875"/>
+<trajectory><image src="fix\myapplicationpex637438945847057500.trajectories.png" width="800" height="1600"/>
+</trajectory>
+</exploration>
+<coverage domain="usercodeundertest" unit="block" covered="308" total="816" coveredRatio="0.37745098039215685"/>
+<coverage domain="usercodeundertest" unit="asserts" covered="4" total="11" coveredRatio="0.36363636363636365"/>
+<sourceCoverage xml="cov\t567\cov.xml" html="cov\t567\cov.html"/>
+<duration start="2020-12-18 05:22:09Z" end="2020-12-18 05:23:05Z" seconds="56.0625"/>
+</fixture>
+<coverage domain="usercodeundertest" unit="block" covered="308" total="816" coveredRatio="0.37745098039215685"/>
+<coverage domain="usercodeundertest" unit="asserts" covered="4" total="11" coveredRatio="0.36363636363636365"/>
+<sourceCoverage xml="cov\a32781230\cov.xml" html="cov\a32781230\cov.html"/>
+<duration start="2020-12-18 05:22:09Z" end="2020-12-18 05:23:05Z" seconds="56.578125"/>
+</assembly>
+<duration start="2020-12-18 05:22:09Z" end="2020-12-18 05:23:05Z" seconds="56.71875"/>
+<background/>
+</pex>

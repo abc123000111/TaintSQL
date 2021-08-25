@@ -1,0 +1,24 @@
+C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\bin\Debug\MacroScope.dll
+C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\bin\Debug\MacroScope.pdb
+C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\bin\Debug\Antlr3.Runtime.dll
+C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\obj\Debug\MacroScope.dll
+C:\Documents and Settings\Wei\桌面\moda_cs527\MacroScopeCE\obj\Debug\MacroScope.pdb
+C:\Documents and Settings\Wei\桌面\TaintSQL\MacroScopeCE\bin\Debug\MacroScope.dll
+C:\Documents and Settings\Wei\桌面\TaintSQL\MacroScopeCE\bin\Debug\MacroScope.pdb
+C:\Documents and Settings\Wei\桌面\TaintSQL\MacroScopeCE\bin\Debug\Antlr3.Runtime.dll
+C:\Documents and Settings\Wei\桌面\TaintSQL\MacroScopeCE\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Wei\桌面\TaintSQL\MacroScopeCE\obj\Debug\MacroScope.dll
+C:\Documents and Settings\Wei\桌面\TaintSQL\MacroScopeCE\obj\Debug\MacroScope.pdb
+C:\TaintSQL\MacroScopeCE\bin\Debug\MacroScope.dll
+C:\TaintSQL\MacroScopeCE\bin\Debug\MacroScope.pdb
+C:\TaintSQL\MacroScopeCE\bin\Debug\Antlr3.Runtime.dll
+C:\TaintSQL\MacroScopeCE\obj\Debug\ResolveAssemblyReference.cache
+C:\TaintSQL\MacroScopeCE\obj\Debug\MacroScope.dll
+C:\TaintSQL\MacroScopeCE\obj\Debug\MacroScope.pdb
+C:\Users\linwei\Desktop\MockIF\TaintSQL\MacroScopeCE\bin\Debug\MacroScope.dll
+C:\Users\linwei\Desktop\MockIF\TaintSQL\MacroScopeCE\bin\Debug\MacroScope.pdb
+C:\Users\linwei\Desktop\MockIF\TaintSQL\MacroScopeCE\bin\Debug\Antlr3.Runtime.dll
+C:\Users\linwei\Desktop\MockIF\TaintSQL\MacroScopeCE\obj\Debug\MacroScopeCE.csprojResolveAssemblyReference.cache
+C:\Users\linwei\Desktop\MockIF\TaintSQL\MacroScopeCE\obj\Debug\MacroScope.dll
+C:\Users\linwei\Desktop\MockIF\TaintSQL\MacroScopeCE\obj\Debug\MacroScope.pdb

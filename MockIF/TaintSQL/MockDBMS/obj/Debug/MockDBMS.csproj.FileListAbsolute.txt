@@ -1,0 +1,32 @@
+C:\Documents and Settings\Wei\桌面\moda_cs527\MockDBMS\bin\Debug\MockDBMS.dll
+C:\Documents and Settings\Wei\桌面\moda_cs527\MockDBMS\bin\Debug\MockDBMS.pdb
+C:\Documents and Settings\Wei\桌面\moda_cs527\MockDBMS\bin\Debug\MacroScope.dll
+C:\Documents and Settings\Wei\桌面\moda_cs527\MockDBMS\bin\Debug\Antlr3.Runtime.dll
+C:\Documents and Settings\Wei\桌面\moda_cs527\MockDBMS\bin\Debug\MacroScope.pdb
+C:\Documents and Settings\Wei\桌面\moda_cs527\MockDBMS\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Wei\桌面\moda_cs527\MockDBMS\obj\Debug\MockDBMS.dll
+C:\Documents and Settings\Wei\桌面\moda_cs527\MockDBMS\obj\Debug\MockDBMS.pdb
+C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\bin\Debug\MockDBMS.dll
+C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\bin\Debug\MockDBMS.pdb
+C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\bin\Debug\MacroScope.dll
+C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\bin\Debug\Antlr3.Runtime.dll
+C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\bin\Debug\MacroScope.pdb
+C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\obj\Debug\MockDBMS.dll
+C:\Documents and Settings\Wei\桌面\TaintSQL\MockDBMS\obj\Debug\MockDBMS.pdb
+C:\TaintSQL\MockDBMS\bin\Debug\MockDBMS.dll
+C:\TaintSQL\MockDBMS\bin\Debug\MockDBMS.pdb
+C:\TaintSQL\MockDBMS\bin\Debug\MacroScope.dll
+C:\TaintSQL\MockDBMS\bin\Debug\Antlr3.Runtime.dll
+C:\TaintSQL\MockDBMS\bin\Debug\MacroScope.pdb
+C:\TaintSQL\MockDBMS\obj\Debug\ResolveAssemblyReference.cache
+C:\TaintSQL\MockDBMS\obj\Debug\MockDBMS.dll
+C:\TaintSQL\MockDBMS\obj\Debug\MockDBMS.pdb
+C:\Users\linwei\Desktop\MockIF\TaintSQL\MockDBMS\bin\Debug\MockDBMS.dll
+C:\Users\linwei\Desktop\MockIF\TaintSQL\MockDBMS\bin\Debug\MockDBMS.pdb
+C:\Users\linwei\Desktop\MockIF\TaintSQL\MockDBMS\bin\Debug\MacroScope.dll
+C:\Users\linwei\Desktop\MockIF\TaintSQL\MockDBMS\bin\Debug\Antlr3.Runtime.dll
+C:\Users\linwei\Desktop\MockIF\TaintSQL\MockDBMS\bin\Debug\MacroScope.pdb
+C:\Users\linwei\Desktop\MockIF\TaintSQL\MockDBMS\obj\Debug\MockDBMS.csprojResolveAssemblyReference.cache
+C:\Users\linwei\Desktop\MockIF\TaintSQL\MockDBMS\obj\Debug\MockDBMS.dll
+C:\Users\linwei\Desktop\MockIF\TaintSQL\MockDBMS\obj\Debug\MockDBMS.pdb
