@@ -30,3 +30,11 @@ C:\Users\linwei\Desktop\MockIF\TaintSQL\MockDBMS\bin\Debug\MacroScope.pdb
 C:\Users\linwei\Desktop\MockIF\TaintSQL\MockDBMS\obj\Debug\MockDBMS.csprojResolveAssemblyReference.cache
 C:\Users\linwei\Desktop\MockIF\TaintSQL\MockDBMS\obj\Debug\MockDBMS.dll
 C:\Users\linwei\Desktop\MockIF\TaintSQL\MockDBMS\obj\Debug\MockDBMS.pdb
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\MockDBMS\bin\Debug\MockDBMS.dll
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\MockDBMS\bin\Debug\MockDBMS.pdb
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\MockDBMS\bin\Debug\MacroScope.dll
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\MockDBMS\bin\Debug\Antlr3.Runtime.dll
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\MockDBMS\bin\Debug\MacroScope.pdb
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\MockDBMS\obj\Debug\MockDBMS.csprojResolveAssemblyReference.cache
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\MockDBMS\obj\Debug\MockDBMS.dll
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\MockDBMS\obj\Debug\MockDBMS.pdb

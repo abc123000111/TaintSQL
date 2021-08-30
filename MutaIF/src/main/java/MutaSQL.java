@@ -66,7 +66,7 @@ public class MutaSQL {
                 p.put(tagname, tag | entry.getValue());
             }
         }
-/*
+
         //source: condition predicates
         for (HashMap.Entry<String, Integer> entry : predicatetag.entrySet()) {
             //System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
@@ -239,7 +239,7 @@ public class MutaSQL {
 
             }
         }
-*/
+
         //output
         for(HashMap<String,Object> p: Rn)
         {

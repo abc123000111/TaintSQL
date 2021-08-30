@@ -42,3 +42,14 @@ C:\Users\linwei\Desktop\MockIF\TaintSQL\ConsoleApplication1\bin\Debug\Antlr3.Run
 C:\Users\linwei\Desktop\MockIF\TaintSQL\ConsoleApplication1\bin\Debug\MockDBMS.pdb
 C:\Users\linwei\Desktop\MockIF\TaintSQL\ConsoleApplication1\bin\Debug\MacroScope.pdb
 C:\Users\linwei\Desktop\MockIF\TaintSQL\ConsoleApplication1\obj\Debug\ExampleCode.csprojResolveAssemblyReference.cache
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\ConsoleApplication1\obj\Debug\ExampleCode.csprojResolveAssemblyReference.cache
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\ConsoleApplication1\bin\Debug\MockDBMS.dll
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\ConsoleApplication1\bin\Debug\MacroScope.dll
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\ConsoleApplication1\bin\Debug\Antlr3.Runtime.dll
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\ConsoleApplication1\bin\Debug\MockDBMS.pdb
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\ConsoleApplication1\bin\Debug\MacroScope.pdb

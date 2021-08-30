@@ -38,3 +38,13 @@ C:\Users\linwei\Desktop\MockIF\TaintSQL\TestDBApp\bin\Debug\MacroScope.pdb
 C:\Users\linwei\Desktop\MockIF\TaintSQL\TestDBApp\obj\Debug\TestDBApp.csprojResolveAssemblyReference.cache
 C:\Users\linwei\Desktop\MockIF\TaintSQL\TestDBApp\obj\Debug\TestDBApp.dll
 C:\Users\linwei\Desktop\MockIF\TaintSQL\TestDBApp\obj\Debug\TestDBApp.pdb
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\TestDBApp\bin\Debug\TestDBApp.dll
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\TestDBApp\bin\Debug\TestDBApp.pdb
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\TestDBApp\bin\Debug\Antlr3.Runtime.dll
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\TestDBApp\bin\Debug\MockDBMS.dll
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\TestDBApp\bin\Debug\MacroScope.dll
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\TestDBApp\bin\Debug\MockDBMS.pdb
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\TestDBApp\bin\Debug\MacroScope.pdb
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\TestDBApp\obj\Debug\TestDBApp.csprojResolveAssemblyReference.cache
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\TestDBApp\obj\Debug\TestDBApp.dll
+C:\Users\linwei\Desktop\TaintSQL\MockIF\TaintSQL\TestDBApp\obj\Debug\TestDBApp.pdb

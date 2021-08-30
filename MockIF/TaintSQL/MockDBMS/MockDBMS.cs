@@ -38,7 +38,7 @@ namespace MockDBMS
         private void readSchemaFromFile()
         {
             tables = new List<Table>();
-            string[] lines = System.IO.File.ReadAllLines(@"C:\Users\linwei\Desktop\MockIF\schema.txt");
+            string[] lines = System.IO.File.ReadAllLines(@"..\..\..\..\schema.txt");
             Table table = null;
             foreach (string line in lines)
             {
