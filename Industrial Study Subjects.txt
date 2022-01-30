@@ -1,0 +1,403 @@
+Eight cases:
+
+(1) 基金专户已清盘产品申购期不合理验证
+SELECT  ac.raise_type           AS 私募类型
+        ,ac.fund_code           AS 产品码
+        ,ac.product_id          AS 产品id
+        ,ac.liquidate_date      AS 清盘日期
+        ,fp.purchase_start_time AS 当前配置开放申购开始时间
+        ,fp.redeem_start_time   AS 当前配置开放赎回开始时间
+FROM    (
+            SELECT  *
+            FROM    antefi.ods_fund_archive_fc
+            WHERE   dt ='{yyyymmdd-1}'
+        ) ac
+LEFT JOIN    (
+                 SELECT  *
+                 FROM    efiods.ods_fp_private
+                 WHERE   dt ='{yyyymmdd-1}'
+             ) fp
+ON      ac.product_id = fp.product_id
+WHERE   to_date(fp.purchase_start_time, 'yyyy-mm-dd hh:mi:ss') >= to_date(ac.liquidate_date, 'yyyymmdd')
+    OR to_date(fp.redeem_start_time, 'yyyy-mm-dd hh:mi:ss') >= to_date(ac.liquidate_date, 'yyyymmdd')
+;
+
+(2) 【滚动持有】流水与交易单核对T+1
+select a.user_id as 交易userId, a.order_status as 交易单状态, a.order_id as 交易单号,a.out_biz_no as 交易外部单号,
+b.user_id as 策略userId, b.status as 策略流水状态, b.refer_order_id as 策略外部单号, b.order_id as 策略流水号
+from (
+  select user_id, order_status, order_id, out_biz_no from efiods.ods_fin_trans_order_fundtranscore
+    where dt = '{PART_DT}'
+    and biz_type = 'ROLL_HOLD_FUND'
+    and order_type = 'AUTO_INVEST_REDEEM'
+) as a LEFT join (
+  select user_id, status, refer_order_id, order_id
+    from efiods.ods_finstrategy_trade_exec_record
+    where dt = '{PART_DT}'
+    and scene_type = 'ROLL_HOLD_FUND'
+) as b on a.out_biz_no = b.order_id and a.user_id = b.user_id and a.order_id = b.refer_order_id
+where (a.order_status = 'ACCEPTED' and b.status != 'ACCEPTED') or (a.order_status = 'FINISHED' and b.status != 'SUCCESS') or (a.order_status = 'PARTIAL_SUCCESS' and b.status != 'SUCCESS')
+or (a.order_status = 'CANCELED' and b.status != 'CONFIRM_FAIL') or (a.order_status = 'CLOSED' or a.order_status = 'FAILURE' and b.status != 'FAIL')
+;
+
+(3) 【基金平台】基金交易单和finasset主单核对（支付&撤单退款）
+SELECT  fund_trade_order.order_id 
+        ,fund_trade_order.downstreamPayId
+        ,fund_trade_order.user_id
+        ,fund_trade_order.order_status
+        ,fund_trade_order.apply_amount
+        ,fund_trade_order.refund_amount
+        ,fund_trade_order.fund_code
+        ,fa_main_order.order_id
+        ,fa_main_order.user_id
+        ,fa_main_order.status
+        ,fa_main_order.amount
+        ,fa_main_order.prod_code
+FROM    (
+            SELECT  order_id
+                    ,GET_JSON_OBJECT(extension_info ,'$.downstreamPayId') as downstreamPayId
+                    ,user_id
+                    ,order_status
+                    ,apply_amount
+                    ,refund_amount
+                    ,fund_code
+            FROM    antefi.ods_fund_trade_order_delta_hh as fund_trade_order
+            WHERE   dt = '{yyyymmdd}'
+            AND     HOUR = '{hh-1}'
+            AND     GET_JSON_OBJECT(extension_info ,'$.isPayByFundPay') = 'Y'
+            AND     (
+                    -- 支付
+                    (
+                        TO_CHAR(DATEADD(TO_DATE(substr(pay_time,1,19) ,'yyyy-MM-dd HH:mi:ss') ,300 ,'ss') ,'yyyyMMddHH') >= '{BEGIN_YYYYMMDDHH}'
+                        AND TO_CHAR(DATEADD(TO_DATE(substr(pay_time,1,19) ,'yyyy-MM-dd HH:mi:ss') ,300 ,'ss') ,'yyyyMMddHH') < '{END_YYYYMMDDHH}'
+                        AND pay_status = 'PAID'
+                    )
+                    -- 撤单退款
+                    OR (
+                        TO_CHAR(DATEADD(TO_DATE(substr(refund_time,1,19) ,'yyyy-MM-dd HH:mi:ss') ,300 ,'ss') ,'yyyyMMddHH') >= '{BEGIN_YYYYMMDDHH}'
+                        AND TO_CHAR(DATEADD(TO_DATE(substr(refund_time,1,19) ,'yyyy-MM-dd HH:mi:ss') ,300 ,'ss') ,'yyyyMMddHH') < '{END_YYYYMMDDHH}'
+                        AND refund_status = 'REFUNDED'
+              AND order_status = 'CANCELLED'
+                    )
+            )
+        ) fund_trade_order
+LEFT OUTER JOIN (
+            SELECT  order_id
+                    ,user_id
+                    ,status
+                    ,amount
+                    ,prod_code
+            FROM    efiods.ods_fa_main_order_delta_hh
+            WHERE   dt = '{yyyymmdd}'
+            AND     HOUR = '{hh-1}'
+            AND     solution_code in ('yeb_buy_fund', 'YebAndVoucher_buy_fund')
+        ) fa_main_order
+ON      fund_trade_order.downstreamPayId = fa_main_order.order_id
+WHERE   
+        -- 单据存在
+        fa_main_order.order_id IS NULL
+        
+        -- uid一致性
+        OR fund_trade_order.user_id <> fa_main_order.user_id
+
+        -- 状态一致性
+        OR (fund_trade_order.order_status not in ('ACCEPTED', 'CANCELLED'))
+        OR (fa_main_order.status not in ('S', 'CA'))
+        OR (fund_trade_order.order_status = 'ACCEPTED' AND fa_main_order.status <> 'S')
+        OR (fund_trade_order.order_status = 'CANCELLED' AND fa_main_order.status <> 'CA')
+
+        -- 金额一致性
+        OR (fund_trade_order.order_status = 'ACCEPTED' AND CAST(fund_trade_order.apply_amount AS INT) <> CAST(fa_main_order.amount AS INT))
+        OR (fund_trade_order.order_status = 'CANCELLED' AND CAST(fund_trade_order.refund_amount AS INT) <> CAST(fa_main_order.amount AS INT))
+
+        -- 产品一致性
+        OR (fund_trade_order.fund_code <> fa_main_order.prod_code)
+;
+;
+;
+;
+;
+
+(4) SQL:
+    <!-- mapped statement for IbatisFundTradeOrderDAO.selectOrderTotalShare -->
+    <select id="MS-FUND-TRADE-ORDER-SELECT-ORDER-TOTAL-SHARE" resultClass="java.math.BigDecimal" >
+        select /*MS-FINFUNDTRADE-FUND-TRADE-ORDER-SELECT-ORDER-TOTAL-SHARE*/ /*+no_rewrite*/
+         COALESCE(SUM(confirm_share), 0)
+      from
+         fund_trade_order
+      where
+        user_id = #userId#
+        <dynamic prepend="and">
+          <isNotNull prepend="and" property="productId">
+            product_id = #productId#
+          </isNotNull>
+          <isNotNull prepend="and" property="sceneId">
+            scene_id = #sceneId#
+          </isNotNull>
+          <isNotEmpty prepend="and" property="orderTypes">
+            <iterate property="orderTypes" open="(" close=")" conjunction="or">
+              order_type = #orderTypes[]#
+            </iterate>
+          </isNotEmpty>
+          <isNotEmpty prepend="and" property="orderStatus">
+            <iterate property="orderStatus" open="(" close=")" conjunction="or">
+              order_status = #orderStatus[]#
+            </iterate>
+          </isNotEmpty>
+          <isNotEmpty prepend="and" property="payStatus">
+            <iterate property="payStatus" open="(" close=")" conjunction="or">
+              pay_status = #payStatus[]#
+            </iterate>
+          </isNotEmpty>
+          <isNotEmpty prepend="and" property="refundStatus">
+            <iterate property="refundStatus" open="(" close=")" conjunction="or">
+              refund_status = #refundStatus[]#
+            </iterate>
+          </isNotEmpty>
+          <isEqual property="rangeUseConfirmDate" compareValue="false">
+            <isNotEmpty prepend="and" property="startDate">
+            gmt_create &gt;= #startDate#
+            </isNotEmpty>
+            <isNotEmpty prepend="and" property="endDate">
+              gmt_create &lt; #endDate#
+            </isNotEmpty>
+            <isNotEmpty prepend="and" property="confirmDate">
+              confirm_date = #confirmDate#
+            </isNotEmpty>
+          </isEqual>
+          <isEqual property="rangeUseConfirmDate" compareValue="true">
+            <isNotEmpty prepend="and" property="startDate">
+            confirm_date &gt;= #startDate#
+            </isNotEmpty>
+            <isNotEmpty prepend="and" property="endDate">
+              confirm_date &lt; #endDate#
+            </isNotEmpty>
+          </isEqual>
+          <isNotNull prepend="and" property="isFixedBuy">
+            is_fixed_buy = #isFixedBuy#
+          </isNotNull>
+          <isNotEmpty prepend="and" property="isShow">
+            <isEqual property="isShow" compareValue="true">
+              !(ORDER_TYPE='QUICK_TRANSFER' AND ORDER_STATUS !='SUCCESS')
+            </isEqual>
+          </isNotEmpty>
+        </dynamic>
+    </select>
+
+含义：查询某用户名下某基金的所有已确认份额
+
+(5) SQL:
+    <!-- mapped statement for IbatisFundTradeOrderDAO.countProcessingOrder -->
+    <select id="MS-FUND-TRADE-ORDER-COUNT-PROCESSING-ORDER" resultClass="long" >
+        select /*MS-FINFUNDTRADE-FUND-TRADE-ORDER-COUNT-PROCESSING-ORDER*/ /*+no_rewrite index(fund_trade_order idx_user_id_order_status)*/
+                count(*)
+        from
+          fund_trade_order
+        where
+          user_id = #userId#
+        and
+        (
+              (
+                (
+                  ORDER_STATUS in ('CANCELLED','SUCCESS','FAILED') and REFUND_STATUS='WAIT_REFUND'
+                )
+                or
+                (
+                  ORDER_STATUS in ('PRE_APPLYING','APPLYING','ACTION_CONFIRMED','INIT','ACCEPTED')
+                )
+                )
+            <dynamic>
+              <isNotEmpty prepend="and" property="productId">
+                (product_id = #productId# or convert_out_product_id = #productId#)
+              </isNotEmpty>
+              <isNotEmpty prepend="and" property="sceneId">
+                                 scene_id = #sceneId#
+                            </isNotEmpty>
+              <isNotNull prepend="and" property="sceneType">
+                <iterate property="sceneType" open="(" close=")" conjunction="or">
+                  scene_type = #sceneType[]#
+                </iterate>
+              </isNotNull>
+              <isNotEmpty prepend="and" property="combinedOrderTypes">
+                                <iterate property="combinedOrderTypes" open="(" close=")" conjunction="or">
+                                    (order_type = #combinedOrderTypes[].orderType#
+                                     <isNull property="combinedOrderTypes[].extBizType">
+                                        and ext_biz_type is null
+                                     </isNull>
+                                     <isNotNull property="combinedOrderTypes[].extBizType">
+                                        and ext_biz_type = #combinedOrderTypes[].extBizType#
+                                     </isNotNull>
+                                     )
+                                </iterate>
+                            </isNotEmpty>
+              <isNotEmpty prepend="and" property="isWithoutNewOrderType">
+                <isEqual property="isWithoutNewOrderType" compareValue="true">
+                  order_type not in ('CUSTODY_TRANSFER', 'DIVIDEND_METHOD', 'FREEZE', 'UNFREEZE')
+                </isEqual>
+              </isNotEmpty>
+            </dynamic>
+            <dynamic prepend="and" open=" !(" close=")">
+              <isNotEmpty prepend="and" property="excludeOrderTypes">
+                order_type in
+                <iterate property="excludeOrderTypes" open="(" close=")" conjunction=",">
+                  #excludeOrderTypes[]#
+                </iterate>
+              </isNotEmpty>
+              <isNotEmpty prepend="and" property="excludeOrderStatus">
+                order_status in
+                <iterate property="excludeOrderStatus" open="(" close=")" conjunction=",">
+                  #excludeOrderStatus[]#
+                </iterate>
+              </isNotEmpty>
+            </dynamic>
+        )
+    </select>
+
+含义：计算某个用户名下的在途订单数量
+
+(6) SQL:
+
+    <!-- mapped statement for IbatisFundTradeOrderDAO.countConfirmingOrder -->
+    <select id="MS-FUND-TRADE-ORDER-COUNT-CONFIRMING-ORDER" resultClass="long" >
+        select /*MS-FINFUNDTRADE-FUND-TRADE-ORDER-COUNT-CONFIRMING-ORDER*/ /*+no_rewrite index(fund_trade_order n_user_id_product_id_confirm_date)*/
+                count(*)
+            from
+                fund_trade_order
+            where
+                user_id = #userId# and
+                ((expected_confirm_date &lt;=#expectedConfirmDate# and
+                order_status = 'ACCEPTED') or (confirm_date = #expectedConfirmDate#
+                and order_status IN ('SUCCESS','PARTIAL_SUCCESS')))
+                <isNotEmpty prepend="and" property="productId">
+                  product_id=#productId#
+                </isNotEmpty>
+                <isNotEmpty prepend="and" property="convertOutProductId">
+                  convert_out_product_id=#convertOutProductId#
+                </isNotEmpty>
+                <isNotEmpty prepend="and" property="orderTypes">
+                    <iterate property="orderTypes" open="(" close=")" conjunction="or">
+                        order_type = #orderTypes[]#
+                    </iterate>
+                </isNotEmpty>
+                <isNotEmpty prepend="and" property="sceneTypes">
+            <iterate property="sceneTypes" open="(" close=")" conjunction="or">
+            scene_type = #sceneTypes[]#
+            </iterate>
+        </isNotEmpty>
+        <isNotEmpty prepend="and" property="sceneIdList">
+            <iterate property="sceneIdList" open="(" close=")" conjunction="or">
+            scene_id = #sceneIdList[]#
+          </iterate>
+        </isNotEmpty>
+    </select>
+
+
+含义：查询数据库，得到某个用户名下，所有处于确认中的订单
+
+(7) SQL:
+select
+    id,
+    gmt_create,
+    gmt_modified,
+    order_id,
+    client_order_id,
+    user_id,
+    product_id,
+    fund_code,
+    scene_type,
+    scene_id,
+    channel,
+    order_type,
+    order_status,
+    ta_code,
+    net_value,
+    apply_amount,
+    apply_share,
+    apply_time,
+    cancel_apply_time,
+    pay_channel_type,
+    pay_status,
+    pay_time,
+    transaction_time,
+    transaction_date,
+    charge,
+    charge_type,
+    charge_rate,
+    charge_rate_type,
+    charge_fee,
+    discount_rate,
+    dividend_method,
+    dividend_type,
+    inst_id,
+    inst_apply_order_id,
+    inst_confirm_order_id,
+    market,
+    asset_id,
+    confirm_date,
+    confirm_amount,
+    confirm_share,
+    refund_amount,
+    refund_status,
+    refund_time,
+    refund_target,
+    buy_order_id,
+    buy_order_channel,
+    redeem_order_id,
+    original_fund_code,
+    original_biz_type,
+    original_confirm_date,
+    original_ta_code,
+    original_order_id,
+    original_confirm_order_id,
+    switch_flag,
+    sync_status,
+    sync_retry_times,
+    cnl_pd_code,
+    cnl_ev_code,
+    biz_pd_code,
+    biz_ev_code,
+    cnl_no,
+    pd_code,
+    ev_code,
+    extension_info,
+    deposit_id,
+    should_refund_amount,
+    is_fixed_buy,
+    refund_target,
+    expected_confirm_date,
+    original_cancel_type,
+    activity_type,
+    coupon_amount,
+    group_order_id,
+    convert_out_product_id,
+    convert_out_apply_share,
+    end_date,
+    freeze_amount,
+    ext_biz_type,
+    user_type,
+    chinfo,
+    transcore_order_id
+from fund_trade_order
+where
+    user_id = #userId#
+    AND switch_flag != 'SHADOW'
+    AND (pay_status != 'PAY_FAILED' or pay_status is null)
+    AND (!(ORDER_TYPE='REDEEM' AND ORDER_STATUS='CLOSED'))
+    AND (!(ORDER_TYPE='DIVIDEND' AND ORDER_STATUS = 'ACCEPTED'))
+    AND
+    <iterate property="orderTypes" open="(" close=")" conjunction="or">
+        order_type = #orderTypes[]#
+    </iterate>
+    AND
+    <iterate property="orderStatus" open="(" close=")" conjunction="or">
+        order_status = #orderStatus[]#
+    </iterate>
+ORDER BY ID DESC
+LIMIT #size#
+
+(8) SQL:
+SELECT SUM(apply_amount) FROM fund_trade_order_01
+WHERE user_id = #userId# AND (scene_type =
+#sceneType1# OR scene_type = #sceneType2#) AND
+(order_type = #orderType1# OR order_type =
+#orderType2#) AND order_status = #orderStatus#
