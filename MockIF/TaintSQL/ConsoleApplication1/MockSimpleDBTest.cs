@@ -28,13 +28,13 @@ namespace ExampleCode
             myCommand = new MockSqlCommand(query, myConnection);
             myCommand.ExecuteScalar();
             
-            /*for (int i = 1; i < 100; i++)
+            for (int i = 1; i < 100; i++)
             {
                 query = String.Format("INSERT INTO PERSONS (index, name) VALUES ({0}, {1})", index3, name2);
                 query = String.Format("INSERT INTO PERSONS (index, name) VALUES ({0}, {1})", DBMS.processData(index3, "00000004", query, false), DBMS.processData(name2, "00000010", query, false));
                 myCommand = new MockSqlCommand(query, myConnection);
                 myCommand.ExecuteScalar();
-            }*/
+            }
 
             query = String.Format("INSERT INTO USER (name, password) VALUES ({0}, 123)", name1);
             query = String.Format("INSERT INTO USER (name, password) VALUES ({0}, 123)", DBMS.processData(name1, "00000008", query, false));
