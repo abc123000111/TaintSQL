@@ -55,8 +55,7 @@ namespace ExampleCode
             query = String.Format("SELECT name, index FROM PERSONS WHERE name = {0}", name2);
             query = String.Format("SELECT name, index FROM PERSONS WHERE name = {0}", DBMS.processData(name2, "00000010", query, true));
             myCommand = new MockSqlCommand(query, myConnection);
-            Stopwatch sw = new Stopwatch();
-            sw.Start();
+
             MockSqlDataReader myReader = myCommand.ExecuteReader();
             while (myReader.Read())
             {
@@ -65,8 +64,6 @@ namespace ExampleCode
                 Console.WriteLine("index: " + myReader[2]);
                 Console.WriteLine("tag: " + myReader[3]);
             }
-            sw.Stop();
-            Console.WriteLine("time: " + sw.ElapsedMilliseconds.ToString());
 
             query = "SELECT name, index FROM PERSONS WHERE 1 = 1";
             myCommand = new MockSqlCommand(query, myConnection);

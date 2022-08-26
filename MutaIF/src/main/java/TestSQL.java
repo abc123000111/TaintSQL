@@ -22,10 +22,6 @@ public class TestSQL {
         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/test?useSSL=FALSE&serverTimezone=UTC", "root", "a19990209l");
         Statement st = conn.createStatement();
         String Qo = "UPDATE Patient SET age = 1 WHERE disease = 'Cancer'";
-        long begintime = System.nanoTime();
         st.executeUpdate(Qo);
-        long endtime = System.nanoTime();
-        long costTime = (endtime - begintime)/1000;
-        System.out.println(costTime);
     }
 }

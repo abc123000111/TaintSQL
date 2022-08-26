@@ -29,8 +29,6 @@ public class InsertSQL {
         //System.out.println(columninclause);
 
         columntag.put("age", 64);
-        //System.out.println(columninclause.toString());
-        long begintime = System.nanoTime();
 
         // ********* insert column
         List<String> str_column = new ArrayList<String>();
@@ -50,9 +48,5 @@ public class InsertSQL {
 
         //System.out.println("final:" + Qm);
         st.executeUpdate(Qm);
-
-        long endtime = System.nanoTime();
-        long costTime = (endtime - begintime)/1000000;
-        System.out.println(costTime);
     }
 }

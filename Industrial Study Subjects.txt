@@ -1,0 +1,305 @@
+The eight industrial study cases are as follows (anonymized according to the company policy):
+
+Case 1:
+
+SELECT  ac.c1           AS a1
+        ,ac.c2           AS a2
+        ,ac.c3          AS a3
+        ,ac.c4      AS a4
+        ,fp.c5 AS a5
+        ,fp.c6   AS a6
+FROM    (
+            SELECT  *
+            FROM    antefi.c7
+            WHERE   c8 ='{yyyymmdd-1}'
+        ) ac
+LEFT JOIN    (
+                 SELECT  *
+                 FROM    efiods.c9
+                 WHERE   c8 ='{yyyymmdd-1}'
+             ) fp
+ON      ac.c3 = fp.c3
+WHERE   to_date(fp.c5, 'yyyy-mm-dd hh:mi:ss') >= to_date(ac.c4, 'yyyymmdd')
+    OR to_date(fp.c6, 'yyyy-mm-dd hh:mi:ss') >= to_date(ac.c4, 'yyyymmdd')
+;
+
+Case 2:
+
+select a.c1 as a1, a.c2 as a2, a.c3 as a3, a.c4 as a4,
+b.c5 as a5, b.c6 as a6, b.c7 as a7, b.c8 as a8
+from (
+  select c1, c2, c3, c4 from t1
+    where c9 = '{PART_DT}'
+    and c10 = 'ROLL_HOLD_FUND'
+    and c11 = 'AUTO_INVEST_REDEEM'
+) as a LEFT join (
+  select c5, c6, c7, c8
+    from t2
+    where c12 = '{PART_DT}'
+    and c13 = 'ROLL_HOLD_FUND'
+) as b on a.c4 = b.c8 and a.c1 = b.c5 and a.c3 = b.c7
+where (a.c2 = 'ACCEPTED' and b.c6 != 'ACCEPTED') or (a.c2 = 'FINISHED' and b.c6 != 'SUCCESS') or (a.c2 = 'PARTIAL_SUCCESS' and b.c6 != 'SUCCESS')
+or (a.c2 = 'CANCELED' and b.c6 != 'CONFIRM_FAIL') or (a.c2 = 'CLOSED' or a.c2 = 'FAILURE' and b.c6 != 'FAIL')
+;
+
+Case 3:
+
+SELECT  t1.c1 
+        ,t1.c2
+        ,t1.c3
+        ,t1.c4
+        ,t1.c5
+        ,t1.c6
+        ,t1.c7
+        ,t2.c8
+        ,t2.c9
+        ,t2.c10
+        ,t2.c11
+        ,t2.c12
+FROM    (
+            SELECT  c1
+                    ,GET_JSON_OBJECT(extension_info ,'$.c2') as c2
+                    ,c3
+                    ,c4
+                    ,c5
+                    ,c6
+                    ,c7
+            FROM    antefi.ods_t1_delta_hh as t1
+            WHERE   c13 = '{yyyymmdd}'
+            AND     c14 = '{hh-1}'
+            AND     GET_JSON_OBJECT(extension_info ,'$.isPayByFundPay') = 'Y'
+            AND     (
+                    (
+                        TO_CHAR(DATEADD(TO_DATE(substr(pay_time,1,19) ,'yyyy-MM-dd HH:mi:ss') ,300 ,'ss') ,'yyyyMMddHH') >= '{BEGIN_YYYYMMDDHH}'
+                        AND TO_CHAR(DATEADD(TO_DATE(substr(pay_time,1,19) ,'yyyy-MM-dd HH:mi:ss') ,300 ,'ss') ,'yyyyMMddHH') < '{END_YYYYMMDDHH}'
+                        AND pay_status = 'PAID'
+                    )
+                    OR (
+                        TO_CHAR(DATEADD(TO_DATE(substr(refund_time,1,19) ,'yyyy-MM-dd HH:mi:ss') ,300 ,'ss') ,'yyyyMMddHH') >= '{BEGIN_YYYYMMDDHH}'
+                        AND TO_CHAR(DATEADD(TO_DATE(substr(refund_time,1,19) ,'yyyy-MM-dd HH:mi:ss') ,300 ,'ss') ,'yyyyMMddHH') < '{END_YYYYMMDDHH}'
+                        AND refund_status = 'REFUNDED'
+              AND c4 = 'CANCELLED'
+                    )
+            )
+        ) t1
+LEFT OUTER JOIN (
+            SELECT  c8
+                    ,c9
+                    ,c10
+                    ,c11
+                    ,c12
+            FROM    efiods.ods_t2_delta_hh
+            WHERE   c15 = '{yyyymmdd}'
+            AND     c16 = '{hh-1}'
+            AND     c17 in ('yeb_buy_fund', 'YebAndVoucher_buy_fund')
+        ) t2
+ON      t1.c2 = t2.c8
+WHERE   
+        t2.c8 IS NULL
+        OR t1.c3 <> t2.c9
+        OR (t1.c4 not in ('ACCEPTED', 'CANCELLED'))
+        OR (t2.c10 not in ('S', 'CA'))
+        OR (t1.c4 = 'ACCEPTED' AND t2.c10 <> 'S')
+        OR (t1.c4 = 'CANCELLED' AND t2.c10 <> 'CA')
+        OR (t1.c4 = 'ACCEPTED' AND CAST(t1.c5 AS INT) <> CAST(t2.c11 AS INT))
+        OR (t1.c4 = 'CANCELLED' AND CAST(t1.c6 AS INT) <> CAST(t2.c11 AS INT))
+        OR (t1.c7 <> t2.c12)
+;
+
+Case 4:
+
+<select id="id1" resultClass="class1" >
+    select
+        COALESCE(SUM(confirm_share), 0)
+    from
+        t1
+    where
+    user_id = #userId#
+    <dynamic prepend="and">
+        <isNotNull prepend="and" property="productId">
+        product_id = #productId#
+        </isNotNull>
+        <isNotNull prepend="and" property="sceneId">
+        scene_id = #sceneId#
+        </isNotNull>
+        <isNotEmpty prepend="and" property="orderTypes">
+        <iterate property="orderTypes" open="(" close=")" conjunction="or">
+            order_type = #orderTypes[]#
+        </iterate>
+        </isNotEmpty>
+        <isNotEmpty prepend="and" property="orderStatus">
+        <iterate property="orderStatus" open="(" close=")" conjunction="or">
+            order_status = #orderStatus[]#
+        </iterate>
+        </isNotEmpty>
+        <isNotEmpty prepend="and" property="payStatus">
+        <iterate property="payStatus" open="(" close=")" conjunction="or">
+            pay_status = #payStatus[]#
+        </iterate>
+        </isNotEmpty>
+        <isNotEmpty prepend="and" property="refundStatus">
+        <iterate property="refundStatus" open="(" close=")" conjunction="or">
+            refund_status = #refundStatus[]#
+        </iterate>
+        </isNotEmpty>
+        <isEqual property="rangeUseConfirmDate" compareValue="false">
+        <isNotEmpty prepend="and" property="startDate">
+        gmt_create &gt;= #startDate#
+        </isNotEmpty>
+        <isNotEmpty prepend="and" property="endDate">
+            gmt_create &lt; #endDate#
+        </isNotEmpty>
+        <isNotEmpty prepend="and" property="confirmDate">
+            confirm_date = #confirmDate#
+        </isNotEmpty>
+        </isEqual>
+        <isEqual property="rangeUseConfirmDate" compareValue="true">
+        <isNotEmpty prepend="and" property="startDate">
+        confirm_date &gt;= #startDate#
+        </isNotEmpty>
+        <isNotEmpty prepend="and" property="endDate">
+            confirm_date &lt; #endDate#
+        </isNotEmpty>
+        </isEqual>
+        <isNotNull prepend="and" property="isFixedBuy">
+        is_fixed_buy = #isFixedBuy#
+        </isNotNull>
+        <isNotEmpty prepend="and" property="isShow">
+        <isEqual property="isShow" compareValue="true">
+            !(ORDER_TYPE='QUICK_TRANSFER' AND ORDER_STATUS !='SUCCESS')
+        </isEqual>
+        </isNotEmpty>
+    </dynamic>
+</select>
+
+Case 5:
+
+<select id="id2" resultClass="class2" >
+    select
+            count(*)
+    from
+        t2
+    where
+        user_id = #userId#
+    and
+    (
+            (
+            (
+                c1 in ('CANCELLED','SUCCESS','FAILED') and REFUND_STATUS='WAIT_REFUND'
+            )
+            or
+            (
+                c1 in ('PRE_APPLYING','APPLYING','ACTION_CONFIRMED','INIT','ACCEPTED')
+            )
+            )
+        <dynamic>
+            <isNotEmpty prepend="and" property="productId">
+            (product_id = #productId# or convert_out_product_id = #productId#)
+            </isNotEmpty>
+            <isNotEmpty prepend="and" property="sceneId">
+                                scene_id = #sceneId#
+                        </isNotEmpty>
+            <isNotNull prepend="and" property="sceneType">
+            <iterate property="sceneType" open="(" close=")" conjunction="or">
+                scene_type = #sceneType[]#
+            </iterate>
+            </isNotNull>
+            <isNotEmpty prepend="and" property="combinedOrderTypes">
+                            <iterate property="combinedOrderTypes" open="(" close=")" conjunction="or">
+                                (c2 = #combinedOrderTypes[].orderType#
+                                    <isNull property="combinedOrderTypes[].extBizType">
+                                    and ext_biz_type is null
+                                    </isNull>
+                                    <isNotNull property="combinedOrderTypes[].extBizType">
+                                    and ext_biz_type = #combinedOrderTypes[].extBizType#
+                                    </isNotNull>
+                                    )
+                            </iterate>
+                        </isNotEmpty>
+            <isNotEmpty prepend="and" property="isWithoutNewOrderType">
+            <isEqual property="isWithoutNewOrderType" compareValue="true">
+                c2 not in ('CUSTODY_TRANSFER', 'DIVIDEND_METHOD', 'FREEZE', 'UNFREEZE')
+            </isEqual>
+            </isNotEmpty>
+        </dynamic>
+        <dynamic prepend="and" open=" !(" close=")">
+            <isNotEmpty prepend="and" property="excludeOrderTypes">
+            c2 in
+            <iterate property="excludeOrderTypes" open="(" close=")" conjunction=",">
+                #excludeOrderTypes[]#
+            </iterate>
+            </isNotEmpty>
+            <isNotEmpty prepend="and" property="excludeOrderStatus">
+            c1 in
+            <iterate property="excludeOrderStatus" open="(" close=")" conjunction=",">
+                #excludeOrderStatus[]#
+            </iterate>
+            </isNotEmpty>
+        </dynamic>
+    )
+</select>
+
+Case 6:
+
+<select id="id3" resultClass="class3" >
+    select
+            count(*)
+        from
+            t3
+        where
+            user_id = #userId# and
+            ((expected_confirm_date &lt;=#expectedConfirmDate# and
+            order_status = 'ACCEPTED') or (confirm_date = #expectedConfirmDate#
+            and order_status IN ('SUCCESS','PARTIAL_SUCCESS')))
+            <isNotEmpty prepend="and" property="productId">
+                product_id=#productId#
+            </isNotEmpty>
+            <isNotEmpty prepend="and" property="convertOutProductId">
+                convert_out_product_id=#convertOutProductId#
+            </isNotEmpty>
+            <isNotEmpty prepend="and" property="orderTypes">
+                <iterate property="orderTypes" open="(" close=")" conjunction="or">
+                    order_type = #orderTypes[]#
+                </iterate>
+            </isNotEmpty>
+            <isNotEmpty prepend="and" property="sceneTypes">
+        <iterate property="sceneTypes" open="(" close=")" conjunction="or">
+        scene_type = #sceneTypes[]#
+        </iterate>
+    </isNotEmpty>
+    <isNotEmpty prepend="and" property="sceneIdList">
+        <iterate property="sceneIdList" open="(" close=")" conjunction="or">
+        scene_id = #sceneIdList[]#
+        </iterate>
+    </isNotEmpty>
+</select>
+
+Case 7:
+
+select
+    *
+from t1
+where
+    c1 = #userId#
+    AND c2 != 'SHADOW'
+    AND (c3 != 'PAY_FAILED' or c3 is null)
+    AND (!(c4='REDEEM' AND c5='CLOSED'))
+    AND (!(c4='DIVIDEND' AND c5 = 'ACCEPTED'))
+    AND
+    <iterate property="orderTypes" open="(" close=")" conjunction="or">
+        c4 = #orderTypes[]#
+    </iterate>
+    AND
+    <iterate property="orderStatus" open="(" close=")" conjunction="or">
+        c5 = #orderStatus[]#
+    </iterate>
+ORDER BY ID DESC
+LIMIT #size#
+
+Case 8:
+
+SELECT SUM(apply_amount) FROM fund_trade_order_01
+WHERE user_id = #userId# AND (scene_type =
+#sceneType1# OR scene_type = #sceneType2#) AND
+(order_type = #orderType1# OR order_type =
+#orderType2#) AND order_status = #orderStatus#

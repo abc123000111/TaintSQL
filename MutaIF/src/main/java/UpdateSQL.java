@@ -39,8 +39,6 @@ public class UpdateSQL {
 
         columntag.put("age", 64);
         predicatetag.put("disease='Cancer'", 128);
-        //System.out.println(columninclause.toString());
-        long begintime = System.nanoTime();
 
         Select select = SelectUtils.buildSelectFromTable(new Table("Patient"));
         ResultSet rs = st.executeQuery(select.toString());
@@ -424,8 +422,5 @@ public class UpdateSQL {
         {
             System.out.println(p.toString());
         }
-        long endtime = System.nanoTime();
-        long costTime = (endtime - begintime)/1000000;
-        System.out.println(costTime);
     }
 }

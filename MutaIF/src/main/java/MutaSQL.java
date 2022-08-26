@@ -41,8 +41,6 @@ public class MutaSQL {
 
         columntag.put("age", 64);
         predicatetag.put("disease='Cancer'", 128);
-        //System.out.println(columninclause.toString());
-        long begintime = System.nanoTime();
 
         ResultSet rs = st.executeQuery(Qo);
         List<HashMap<String, Object>> Rn = new ArrayList<HashMap<String,Object>>();
@@ -245,9 +243,5 @@ public class MutaSQL {
         {
             System.out.println(p.toString());
         }
-
-        long endtime = System.nanoTime();
-        long costTime = (endtime - begintime)/1000000;
-        System.out.println(costTime);
     }
 }
